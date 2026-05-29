@@ -1,0 +1,41 @@
+:host {
+    display: block;
+}
+
+/* ───── Form Styling ───── */
+.nh-clean-input {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    border-color: #ddd !important;
+}
+
+.nh-clean-input:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-bottom: 2px solid #111 !important;
+    background-color: transparent !important;
+}
+
+::placeholder {
+    color: #aaa !important;
+    font-weight: 300 !important;
+}
+
+/* ───── Button Styling ───── */
+.nh-btn-clean {
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.nh-btn-clean:hover {
+    background-color: #c9a84c !important;
+    color: #fff !important;
+    border-color: #c9a84c !important;
+}
+
+/* ───── Links ───── */
+.transition-hover {
+    transition: color 0.2s ease;
+}
+
+.transition-hover:hover {
+    color: #c9a84c !important;
+}

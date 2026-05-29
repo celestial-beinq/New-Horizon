@@ -1,0 +1,55 @@
+:host {
+  display: block;
+}
+
+/* ───── Hero Effects ───── */
+.gsap-inv-bg img {
+  transition: transform 10s ease-out;
+}
+.gsap-inv-bg:hover img {
+  transform: scale(1.1) !important; 
+}
+
+/* ───── Images & Layout ───── */
+.opp-img {
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* ───── Hover Utilities ───── */
+.custom-opp-hover {
+  cursor: pointer;
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.4s ease;
+}
+
+.custom-opp-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.06) !important;
+}
+
+.custom-opp-hover:hover .opp-img {
+  transform: scale(1.06);
+}
+
+.custom-step-hover {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.custom-step-hover:hover {
+  transform: translateY(-5px);
+  background-color: #f0f0f0 !important;
+}
+
+/* ───── Custom Buttons ───── */
+.custom-btn-hover {
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+.custom-btn-hover:hover {
+  opacity: 0.9;
+}
+
+.custom-btn-outline-hover {
+  transition: all 0.3s ease;
+}
+.custom-btn-outline-hover:hover {
+  background-color: #111;
+  color: #fff !important;
+}

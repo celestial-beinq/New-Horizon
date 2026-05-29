@@ -1,89 +1,125 @@
-<footer class="footer bg-dark-green text-white py-8">
-  <div class="container">
-    <div class="row gy-6 pb-8">
+<footer class="footer text-white bg-black position-relative overflow-hidden">
 
-      <!-- Brand -->
-      <div class="col-xl-3 col-lg-12 col-md-6">
+  <!-- Top CTA Band -->
+  <div class="border-bottom" style="border-color: rgba(255,255,255,0.08) !important;">
+    <div class="container py-5">
+      <div class="row align-items-center gy-4 gsap-footer-cta">
+        <div class="col-lg-7">
+          <h2 class="display-6 fw-medium text-white mb-2" style="letter-spacing: -0.02em; line-height: 1.15;">
+            Ready to find your<br class="d-none d-md-block"> dream property?
+          </h2>
+          <p class="text-white mb-0 fs-6">Get personalized recommendations from our expert agents.</p>
+        </div>
+        <div class="col-lg-5 d-flex flex-wrap gap-3 justify-content-lg-end">
+          <button class="btn rounded-0 px-4 py-3" style="background-color: #fff; color: #111; font-weight: 500;">
+            Explore properties
+          </button>
+          <button class="btn btn-outline-light rounded-0 px-4 py-3" style="font-weight: 500; border-color: rgba(255,255,255,0.25);">
+            Get consultation
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Footer Content -->
+  <div class="container py-5 mt-2">
+    <div class="row gy-5 pb-5 gsap-footer-links">
+
+      <!-- Brand Column -->
+      <div class="col-xl-3 col-lg-4 col-md-6 gsap-footer-col">
         <div class="d-flex flex-column gap-3">
-          <div>
-            <h3 class="fw-bold text-white">Crestline Energy</h3>
-          </div>
-          <p class="mb-0">
-            Powering homes and businesses with clean, reliable solar energy solutions. 
-            Building a sustainable future—one installation at a time.
+          <h4 class="fw-bold text-white mb-0" style="letter-spacing: -0.02em;">
+            HORIZON<br><span class="fw-normal" style="font-size: 0.7em; letter-spacing: 0.15em; opacity: 0.7;">ESTATE</span>
+          </h4>
+          <p class="mb-0 text-white" style="font-size: 0.9rem; line-height: 1.7;">
+            Premium real estate investments and curated properties worldwide. Building wealth through exceptional living spaces.
           </p>
-
-          <!-- Language / Region -->
-          <div>
-            <button class="btn btn-outline-light rounded-5 btn-sm">
-              Nigeria (EN)
-            </button>
+          <!-- Social Icons -->
+          <div class="d-flex gap-3 mt-2">
+            <a href="#" class="text-white text-decoration-none d-flex align-items-center justify-content-center"
+               style="width: 38px; height: 38px; border: 1px solid rgba(255,255,255,0.12); transition: all 0.3s ease;">
+              <i class="bi bi-instagram" style="font-size: 0.9rem;"></i>
+            </a>
+            <a href="#" class="text-white text-decoration-none d-flex align-items-center justify-content-center"
+               style="width: 38px; height: 38px; border: 1px solid rgba(255,255,255,0.12); transition: all 0.3s ease;">
+              <i class="bi bi-linkedin" style="font-size: 0.9rem;"></i>
+            </a>
+            <a href="#" class="text-white text-decoration-none d-flex align-items-center justify-content-center"
+               style="width: 38px; height: 38px; border: 1px solid rgba(255,255,255,0.12); transition: all 0.3s ease;">
+              <i class="bi bi-twitter-x" style="font-size: 0.9rem;"></i>
+            </a>
+            <a href="#" class="text-white text-decoration-none d-flex align-items-center justify-content-center"
+               style="width: 38px; height: 38px; border: 1px solid rgba(255,255,255,0.12); transition: all 0.3s ease;">
+              <i class="bi bi-youtube" style="font-size: 0.9rem;"></i>
+            </a>
           </div>
         </div>
       </div>
 
+      <!-- Properties -->
+      <div class="col-xl-2 col-md-3 col-6 gsap-footer-col">
+        <span class="text-uppercase small fw-semibold d-block mb-3" style="font-size: 0.7rem; letter-spacing: 0.12em; color: rgba(255,255,255,0.45);">Properties</span>
+        <ul class="list-unstyled">
+          <li class="pb-2"><a routerLink="/" class="footer-link text-white text-decoration-none" style="font-size: 0.9rem;">Luxury Villas</a></li>
+          <li class="pb-2"><a routerLink="/" class="footer-link text-white text-decoration-none" style="font-size: 0.9rem;">Penthouses</a></li>
+          <li class="pb-2"><a routerLink="/" class="footer-link text-white text-decoration-none" style="font-size: 0.9rem;">Residences</a></li>
+          <li class="pb-2"><a routerLink="/" class="footer-link text-white text-decoration-none" style="font-size: 0.9rem;">Commercial</a></li>
+          <li class="pb-2"><a routerLink="/" class="footer-link text-white text-decoration-none" style="font-size: 0.9rem;">New Developments</a></li>
+        </ul>
+      </div>
+
       <!-- Company -->
-      <div class="col-xl-2 col-md-3 col-6">
-        <span class="fw-semibold text-uppercase small">Company</span>
-        <ul class="list-unstyled mt-3">
-          <li class="pb-2"><a href="" routerlink="/about" class="text-white text-decoration-none">About Us</a></li>
-          <li class="pb-2"><a href="" routerlink="/projects" class="text-white text-decoration-none">Our Projects</a></li>
-          <li class="pb-2"><a href="" routerlink="/careers" class="text-white text-decoration-none">Careers</a></li>
-          <li class="pb-2"><a href="" routerlink="/partners" class="text-white text-decoration-none">Partners</a></li>
+      <div class="col-xl-2 col-md-3 col-6 gsap-footer-col">
+        <span class="text-uppercase small fw-semibold d-block mb-3" style="font-size: 0.7rem; letter-spacing: 0.12em; color: rgba(255,255,255,0.45);">Company</span>
+        <ul class="list-unstyled">
+          <li class="pb-2"><a routerLink="/about" class="footer-link text-white text-decoration-none" style="font-size: 0.9rem;">About Us</a></li>
+          <li class="pb-2"><a routerLink="/" class="footer-link text-white text-decoration-none" style="font-size: 0.9rem;">Our Agents</a></li>
+          <li class="pb-2"><a routerLink="/" class="footer-link text-white text-decoration-none" style="font-size: 0.9rem;">Careers</a></li>
+          <li class="pb-2"><a routerLink="/" class="footer-link text-white text-decoration-none" style="font-size: 0.9rem;">Press</a></li>
+          <li class="pb-2"><a routerLink="/" class="footer-link text-white text-decoration-none" style="font-size: 0.9rem;">Partners</a></li>
         </ul>
       </div>
 
-      <!-- Services -->
-      <div class="col-xl-2 col-md-3 col-6">
-        <span class="fw-semibold text-uppercase small">Services</span>
-        <ul class="list-unstyled mt-3">
-          <li class="pb-2"><a href="" routerlink="/" class="text-white text-decoration-none">Solar Installation</a></li>
-          <li class="pb-2"><a href="" routerlink="/" class="text-white text-decoration-none">Energy Audit</a></li>
-          <li class="pb-2"><a href="" routerlink="/" class="text-white text-decoration-none">Maintenance</a></li>
-          <li class="pb-2"><a href="" routerlink="/" class="text-white text-decoration-none">Consultation</a></li>
+      <!-- Investments -->
+      <div class="col-xl-2 col-md-3 col-6 gsap-footer-col">
+        <span class="text-uppercase small fw-semibold d-block mb-3" style="font-size: 0.7rem; letter-spacing: 0.12em; color: rgba(255,255,255,0.45);">Investments</span>
+        <ul class="list-unstyled">
+          <li class="pb-2"><a routerLink="/" class="footer-link text-white text-decoration-none" style="font-size: 0.9rem;">How It Works</a></li>
+          <li class="pb-2"><a routerLink="/" class="footer-link text-white text-decoration-none" style="font-size: 0.9rem;">Returns & IRR</a></li>
+          <li class="pb-2"><a routerLink="/" class="footer-link text-white text-decoration-none" style="font-size: 0.9rem;">Portfolio</a></li>
+          <li class="pb-2"><a routerLink="/" class="footer-link text-white text-decoration-none" style="font-size: 0.9rem;">FAQs</a></li>
         </ul>
       </div>
 
-      <!-- Resources -->
-      <div class="col-xl-2 col-md-3 col-6">
-        <span class="fw-semibold text-uppercase small">Resources</span>
-        <ul class="list-unstyled mt-3">
-          <li class="pb-2"><a href="" routerlink="/" class="text-white text-decoration-none">Blog</a></li>
-          <li class="pb-2"><a href="" routerlink="/" class="text-white text-decoration-none">FAQs</a></li>
-          <li class="pb-2"><a href="" routerlink="/" class="text-white text-decoration-none">Support</a></li>
-          <li class="pb-2"><a href="" routerlink="/" class="text-white text-decoration-none">Documentation</a></li>
-        </ul>
-      </div>
-
-      <!-- Contact -->
-      <div class="col-xl-2 col-md-3 col-6">
-        <span class="fw-semibold text-uppercase small">Contact</span>
-        <ul class="list-unstyled mt-3">
-          <li class="pb-2"> +234 800 123 4567</li>
-          <li class="pb-2"> Mon – Sat: 8AM – 6PM</li>
-          <li class="pb-2"> support@crestlinesolar.com</li>
-          <li class="pb-2"> Lagos, Nigeria</li>
-        </ul>
-
-       
+      <!-- Newsletter -->
+      <div class="col-xl-3 col-md-3 col-6 gsap-footer-col">
+        <span class="text-uppercase small fw-semibold d-block mb-3" style="font-size: 0.7rem; letter-spacing: 0.12em; color: rgba(255,255,255,0.45);">Newsletter</span>
+        <p class="text-white mb-3" style="font-size: 0.85rem; line-height: 1.6;">Stay updated with our latest listings and market insights.</p>
+        <div class="d-flex">
+          <input type="email" class="form-control rounded-0 border-0 py-2 px-3" placeholder="Your email"
+                 style="background-color: rgba(255,255,255,0.08); color: #fff; font-size: 0.85rem;">
+          <button class="btn rounded-0 px-3 border-0" style="background-color: #fff; color: #111;">
+            <i class="bi bi-arrow-right"></i>
+          </button>
+        </div>
       </div>
 
     </div>
 
-    <!-- Bottom -->
-    <div class="row border-top pt-3 align-items-center">
-      <div class="col-md-6 text-center text-md-start">
-        <small>
-          © <span id="year"></span> Crestline Energy Solar. All rights reserved.
+    <!-- Bottom Bar -->
+    <div class="row border-top pt-4 pb-2 align-items-center gsap-footer-bottom" style="border-color: rgba(255,255,255,0.08) !important;">
+      <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+        <small class="text-white" style="font-size: 0.8rem;">
+          © 2026 Horizon Estate. All rights reserved.
         </small>
       </div>
-
       <div class="col-md-6 text-center text-md-end">
-        <a href="#" class="text-white me-3">Terms</a>
-        <a href="#" class="text-white me-3">Privacy</a>
-        <a href="#" class="text-white">Cookies</a>
+        <a href="#" class="text-white text-decoration-none me-4" style="font-size: 0.8rem;">Terms of Service</a>
+        <a href="#" class="text-white text-decoration-none me-4" style="font-size: 0.8rem;">Privacy Policy</a>
+        <a href="#" class="text-white text-decoration-none" style="font-size: 0.8rem;">Cookies</a>
       </div>
     </div>
   </div>
-</footer>
 
+</footer>

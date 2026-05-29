@@ -1,211 +1,603 @@
 <app-header></app-header>
 
-<section class="py-5 bg-light position-relative overflow-hidden">
+<!-- Hero Banner -->
+<section class="position-relative overflow-hidden" style="background-color: #111; min-height: 70vh;">
+    <div class="position-absolute w-100 h-100 top-0 start-0" style="z-index: 0;">
+        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1600&q=80"
+            alt="Luxury Property Services" class="w-100 h-100 object-fit-cover"
+            style="opacity: 0.35; filter: grayscale(20%);">
+    </div>
+    <div class="container position-relative d-flex flex-column justify-content-center" style="z-index: 2; min-height: 70vh;">
+        <div class="row">
+            <div class="col-lg-8 col-xl-7">
+                <span class="gsap-svc-hero d-inline-block text-uppercase small fw-semibold mb-3 px-3 py-1"
+                    style="font-size: 0.7rem; letter-spacing: 0.15em; color: rgba(255,255,255,0.6); border: 1px solid rgba(255,255,255,0.15);">
+                    Our Services
+                </span>
+                <h1 class="gsap-svc-hero display-2 fw-bold text-white mb-4" style="letter-spacing: -0.03em; line-height: 1.05;">
+                    Comprehensive<br>real estate solutions
+                </h1>
+                <p class="gsap-svc-hero text-white mb-5 fs-5" style="opacity: 0.7; max-width: 540px; line-height: 1.7;">
+                    From property acquisition and portfolio management to legal support and concierge services — we handle every detail of your real estate journey.
+                </p>
+                <div class="gsap-svc-hero d-flex gap-3 flex-wrap">
+                    <a routerLink="/contact" class="btn rounded-0 px-4 py-3 text-decoration-none"
+                        style="background-color: #fff; color: #111; font-weight: 500;">Get started</a>
+                    <a href="#services-grid" class="btn btn-outline-light rounded-0 px-4 py-3"
+                        style="font-weight: 500; border-color: rgba(255,255,255,0.25);">Explore services</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scroll indicator -->
+    <div class="position-absolute bottom-0 start-50 translate-middle-x pb-4 text-center" style="z-index: 2;">
+        <div class="gsap-scroll-indicator d-flex flex-column align-items-center gap-2">
+            <small class="text-white" style="opacity: 0.4; font-size: 0.7rem; letter-spacing: 0.1em;">SCROLL</small>
+            <div style="width: 1px; height: 30px; background: linear-gradient(to bottom, rgba(255,255,255,0.4), transparent);"></div>
+        </div>
+    </div>
+</section>
 
-    <div class="container">
 
-        <!-- Heading -->
-        <div class="text-center mb-5">
+<!-- Trusted Stat Bar -->
+<section style="background-color: #fafafa; border-bottom: 1px solid #eee;">
+    <div class="container py-5">
+        <div class="row g-4 text-center gsap-stat-bar">
+            <div class="col-6 col-md-3">
+                <h3 class="display-6 fw-bold text-dark mb-1">2,400+</h3>
+                <p class="text-muted mb-0" style="font-size: 0.85rem;">Properties Managed</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <h3 class="display-6 fw-bold text-dark mb-1">98%</h3>
+                <p class="text-muted mb-0" style="font-size: 0.85rem;">Client Satisfaction</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <h3 class="display-6 fw-bold text-dark mb-1">$1.2B</h3>
+                <p class="text-muted mb-0" style="font-size: 0.85rem;">Transaction Volume</p>
+            </div>
+            <div class="col-6 col-md-3">
+                <h3 class="display-6 fw-bold text-dark mb-1">15+</h3>
+                <p class="text-muted mb-0" style="font-size: 0.85rem;">Countries Covered</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-            <span class="badge bg-warning text-dark px-3 py-2 rounded-pill mb-3">
-                Our Solar Services
-            </span>
 
-            <h2 class="display-4 fw-bold mb-3">
-                Complete Solar & Energy Solutions
-            </h2>
-
-            <p class="text-muted mx-auto"
-               style="max-width: 760px;">
-                We provide reliable solar installation, smart energy systems,
-                backup power solutions, and maintenance services for homes,
-                offices, schools, churches, and commercial properties across Nigeria.
-            </p>
-
+<!-- Core Services Grid -->
+<section id="services-grid" class="py-5" style="background-color: #fafafa;">
+    <div class="container py-5">
+        <div class="row mb-5 align-items-end">
+            <div class="col-lg-6 gsap-svc-heading">
+                <span class="text-uppercase small fw-semibold d-block mb-3"
+                    style="font-size: 0.7rem; letter-spacing: 0.15em; color: #999;">What We Do</span>
+                <h2 class="display-5 fw-bold text-dark mb-0" style="letter-spacing: -0.02em; line-height: 1.1;">
+                    End-to-end real<br>estate services
+                </h2>
+            </div>
+            <div class="col-lg-5 offset-lg-1 mt-3 mt-lg-0 gsap-svc-heading">
+                <p class="text-muted mb-0 fs-6" style="line-height: 1.7;">
+                    Whether you're searching for your dream home, diversifying your portfolio, or managing a premium
+                    property — our team delivers tailored solutions at every stage.
+                </p>
+            </div>
         </div>
 
-        <!-- Services Grid -->
         <div class="row g-4">
 
-            <!-- Card -->
-            <div class="col-md-6 col-lg-4">
-                <div class="service-card bg-white rounded-5 p-4 h-100 shadow-sm border">
-
-                    <div class="service-icon bg-warning text-dark mb-4">
-                        <i class="bi bi-house-door-fill"></i>
+            <!-- Service 1: Property Acquisition -->
+            <div class="col-md-6 col-lg-4 gsap-svc-card">
+                <div class="svc-card bg-white p-4 p-lg-5 h-100 shadow-sm border-0 position-relative overflow-hidden">
+                    <div class="svc-icon-wrap mb-4">
+                        <div class="d-flex align-items-center justify-content-center"
+                            style="width: 56px; height: 56px; background-color: #111; color: #fff;">
+                            <i class="bi bi-search fs-5"></i>
+                        </div>
                     </div>
-
-                    <h4 class="fw-bold mb-3">
-                        Residential Solar
-                    </h4>
-
-                    <p class="text-muted mb-4">
-                        Power your home with reliable solar energy systems designed
-                        for uninterrupted electricity, lower fuel costs, and daily comfort.
+                    <h5 class="fw-bold text-dark mb-3">Property Acquisition</h5>
+                    <p class="text-muted mb-4" style="font-size: 0.9rem; line-height: 1.7;">
+                        We source and secure premium properties worldwide — villas, penthouses, and residences — matching
+                        every detail to your lifestyle and investment goals.
                     </p>
-
-                    <a href="#" class="text-dark fw-semibold text-decoration-none">
-                        Learn More
-                        <i class="bi bi-arrow-up-right ms-1"></i>
+                    <a routerLink="/contact" class="text-dark fw-medium text-decoration-none svc-link"
+                        style="font-size: 0.85rem;">
+                        Learn more <i class="bi bi-arrow-right ms-1"></i>
                     </a>
-
+                    <div class="svc-card-accent"></div>
                 </div>
             </div>
 
-            <!-- Card -->
-            <div class="col-md-6 col-lg-4">
-                <div class="service-card bg-white rounded-5 p-4 h-100 shadow-sm border">
-
-                    <div class="service-icon bg-success text-white mb-4">
-                        <i class="bi bi-buildings-fill"></i>
+            <!-- Service 2: Investment Advisory -->
+            <div class="col-md-6 col-lg-4 gsap-svc-card">
+                <div class="svc-card bg-white p-4 p-lg-5 h-100 shadow-sm border-0 position-relative overflow-hidden">
+                    <div class="svc-icon-wrap mb-4">
+                        <div class="d-flex align-items-center justify-content-center"
+                            style="width: 56px; height: 56px; background-color: #111; color: #fff;">
+                            <i class="bi bi-graph-up-arrow fs-5"></i>
+                        </div>
                     </div>
-
-                    <h4 class="fw-bold mb-3">
-                        Commercial Solar
-                    </h4>
-
-                    <p class="text-muted mb-4">
-                        Reduce operational costs and maintain stable business operations
-                        with scalable solar solutions for offices and commercial facilities.
+                    <h5 class="fw-bold text-dark mb-3">Investment Advisory</h5>
+                    <p class="text-muted mb-4" style="font-size: 0.9rem; line-height: 1.7;">
+                        Data-driven insights and market analysis to maximize your real estate returns. We evaluate IRR,
+                        yield, and long-term capital appreciation for every opportunity.
                     </p>
-
-                    <a href="#" class="text-dark fw-semibold text-decoration-none">
-                        Learn More
-                        <i class="bi bi-arrow-up-right ms-1"></i>
+                    <a routerLink="/contact" class="text-dark fw-medium text-decoration-none svc-link"
+                        style="font-size: 0.85rem;">
+                        Learn more <i class="bi bi-arrow-right ms-1"></i>
                     </a>
-
+                    <div class="svc-card-accent"></div>
                 </div>
             </div>
 
-            <!-- Card -->
-            <div class="col-md-6 col-lg-4">
-                <div class="service-card bg-white rounded-5 p-4 h-100 shadow-sm border">
-
-                    <div class="service-icon bg-dark text-white mb-4">
-                        <i class="bi bi-lightning-charge-fill"></i>
+            <!-- Service 3: Portfolio Management -->
+            <div class="col-md-6 col-lg-4 gsap-svc-card">
+                <div class="svc-card bg-white p-4 p-lg-5 h-100 shadow-sm border-0 position-relative overflow-hidden">
+                    <div class="svc-icon-wrap mb-4">
+                        <div class="d-flex align-items-center justify-content-center"
+                            style="width: 56px; height: 56px; background-color: #111; color: #fff;">
+                            <i class="bi bi-briefcase fs-5"></i>
+                        </div>
                     </div>
-
-                    <h4 class="fw-bold mb-3">
-                        Inverter Installation
-                    </h4>
-
-                    <p class="text-muted mb-4">
-                        Get efficient inverter systems with seamless power switching,
-                        stable energy supply, and smart energy management.
+                    <h5 class="fw-bold text-dark mb-3">Portfolio Management</h5>
+                    <p class="text-muted mb-4" style="font-size: 0.9rem; line-height: 1.7;">
+                        Comprehensive management of your property portfolio — from tenant relations and revenue tracking
+                        to maintenance scheduling and financial reporting.
                     </p>
-
-                    <a href="#" class="text-dark fw-semibold text-decoration-none">
-                        Learn More
-                        <i class="bi bi-arrow-up-right ms-1"></i>
+                    <a routerLink="/contact" class="text-dark fw-medium text-decoration-none svc-link"
+                        style="font-size: 0.85rem;">
+                        Learn more <i class="bi bi-arrow-right ms-1"></i>
                     </a>
-
+                    <div class="svc-card-accent"></div>
                 </div>
             </div>
 
-            <!-- Card -->
-            <div class="col-md-6 col-lg-4">
-                <div class="service-card bg-white rounded-5 p-4 h-100 shadow-sm border">
-
-                    <div class="service-icon bg-primary text-white mb-4">
-                        <i class="bi bi-battery-charging"></i>
+            <!-- Service 4: Legal & Due Diligence -->
+            <div class="col-md-6 col-lg-4 gsap-svc-card">
+                <div class="svc-card bg-white p-4 p-lg-5 h-100 shadow-sm border-0 position-relative overflow-hidden">
+                    <div class="svc-icon-wrap mb-4">
+                        <div class="d-flex align-items-center justify-content-center"
+                            style="width: 56px; height: 56px; background-color: #111; color: #fff;">
+                            <i class="bi bi-shield-check fs-5"></i>
+                        </div>
                     </div>
-
-                    <h4 class="fw-bold mb-3">
-                        Battery Upgrades
-                    </h4>
-
-                    <p class="text-muted mb-4">
-                        Upgrade to high-performance lithium batteries for longer backup time,
-                        faster charging, and improved system efficiency.
+                    <h5 class="fw-bold text-dark mb-3">Legal & Due Diligence</h5>
+                    <p class="text-muted mb-4" style="font-size: 0.9rem; line-height: 1.7;">
+                        Full legal support including title verification, contract drafting, regulatory compliance,
+                        and cross-border transaction documentation.
                     </p>
-
-                    <a href="#" class="text-dark fw-semibold text-decoration-none">
-                        Learn More
-                        <i class="bi bi-arrow-up-right ms-1"></i>
+                    <a routerLink="/contact" class="text-dark fw-medium text-decoration-none svc-link"
+                        style="font-size: 0.85rem;">
+                        Learn more <i class="bi bi-arrow-right ms-1"></i>
                     </a>
-
+                    <div class="svc-card-accent"></div>
                 </div>
             </div>
 
-            <!-- Card -->
-            <div class="col-md-6 col-lg-4">
-                <div class="service-card bg-white rounded-5 p-4 h-100 shadow-sm border">
-
-                    <div class="service-icon bg-danger text-white mb-4">
-                        <i class="bi bi-camera-video-fill"></i>
+            <!-- Service 5: Property Valuation -->
+            <div class="col-md-6 col-lg-4 gsap-svc-card">
+                <div class="svc-card bg-white p-4 p-lg-5 h-100 shadow-sm border-0 position-relative overflow-hidden">
+                    <div class="svc-icon-wrap mb-4">
+                        <div class="d-flex align-items-center justify-content-center"
+                            style="width: 56px; height: 56px; background-color: #111; color: #fff;">
+                            <i class="bi bi-calculator fs-5"></i>
+                        </div>
                     </div>
-
-                    <h4 class="fw-bold mb-3">
-                        CCTV + Solar Integration
-                    </h4>
-
-                    <p class="text-muted mb-4">
-                        Keep your security systems running 24/7 with solar-powered CCTV
-                        solutions for homes, businesses, and estates.
+                    <h5 class="fw-bold text-dark mb-3">Property Valuation</h5>
+                    <p class="text-muted mb-4" style="font-size: 0.9rem; line-height: 1.7;">
+                        Accurate market valuations using comparable analysis, income approach, and proprietary data
+                        models to determine fair prices and investment potential.
                     </p>
-
-                    <a href="#" class="text-dark fw-semibold text-decoration-none">
-                        Learn More
-                        <i class="bi bi-arrow-up-right ms-1"></i>
+                    <a routerLink="/contact" class="text-dark fw-medium text-decoration-none svc-link"
+                        style="font-size: 0.85rem;">
+                        Learn more <i class="bi bi-arrow-right ms-1"></i>
                     </a>
-
+                    <div class="svc-card-accent"></div>
                 </div>
             </div>
 
-            <!-- Card -->
-            <div class="col-md-6 col-lg-4">
-                <div class="service-card bg-white rounded-5 p-4 h-100 shadow-sm border">
-
-                    <div class="service-icon bg-info text-white mb-4">
-                        <i class="bi bi-lamp-fill"></i>
+            <!-- Service 6: Concierge & Relocation -->
+            <div class="col-md-6 col-lg-4 gsap-svc-card">
+                <div class="svc-card bg-white p-4 p-lg-5 h-100 shadow-sm border-0 position-relative overflow-hidden">
+                    <div class="svc-icon-wrap mb-4">
+                        <div class="d-flex align-items-center justify-content-center"
+                            style="width: 56px; height: 56px; background-color: #111; color: #fff;">
+                            <i class="bi bi-geo-alt fs-5"></i>
+                        </div>
                     </div>
-
-                    <h4 class="fw-bold mb-3">
-                        Solar Street Lights
-                    </h4>
-
-                    <p class="text-muted mb-4">
-                        Illuminate streets, estates, compounds, and commercial spaces
-                        with durable and energy-efficient solar lighting systems.
+                    <h5 class="fw-bold text-dark mb-3">Concierge & Relocation</h5>
+                    <p class="text-muted mb-4" style="font-size: 0.9rem; line-height: 1.7;">
+                        White-glove relocation assistance including area tours, school and amenity guidance,
+                        interior design coordination, and lifestyle concierge services.
                     </p>
-
-                    <a href="#" class="text-dark fw-semibold text-decoration-none">
-                        Learn More
-                        <i class="bi bi-arrow-up-right ms-1"></i>
+                    <a routerLink="/contact" class="text-dark fw-medium text-decoration-none svc-link"
+                        style="font-size: 0.85rem;">
+                        Learn more <i class="bi bi-arrow-right ms-1"></i>
                     </a>
-
-                </div>
-            </div>
-
-            <!-- Card -->
-            <div class="col-md-6 col-lg-4 mx-auto">
-                <div class="service-card bg-white rounded-5 p-4 h-100 shadow-sm border">
-
-                    <div class="service-icon bg-secondary text-white mb-4">
-                        <i class="bi bi-tools"></i>
-                    </div>
-
-                    <h4 class="fw-bold mb-3">
-                        Maintenance & Repairs
-                    </h4>
-
-                    <p class="text-muted mb-4">
-                        Ensure maximum system performance with professional solar
-                        maintenance, troubleshooting, and repair services.
-                    </p>
-
-                    <a href="#" class="text-dark fw-semibold text-decoration-none">
-                        Learn More
-                        <i class="bi bi-arrow-up-right ms-1"></i>
-                    </a>
-
+                    <div class="svc-card-accent"></div>
                 </div>
             </div>
 
         </div>
-
     </div>
+</section>
 
+
+<!-- Process Section -->
+<section class="py-5" style="background-color: #fff;">
+    <div class="container py-5">
+        <div class="text-center mb-5 gsap-process-heading">
+            <span class="text-uppercase small fw-semibold d-block mb-3"
+                style="font-size: 0.7rem; letter-spacing: 0.15em; color: #999;">How It Works</span>
+            <h2 class="display-5 fw-bold text-dark mb-3" style="letter-spacing: -0.02em;">
+                Your journey with us
+            </h2>
+            <p class="text-muted mx-auto mb-0" style="max-width: 580px; line-height: 1.7;">
+                A streamlined, transparent process designed to make your property experience effortless from start to finish.
+            </p>
+        </div>
+
+        <div class="row g-0">
+            <!-- Step 1 -->
+            <div class="col-md-6 col-lg-3 gsap-process-step">
+                <div class="text-center px-4 py-5 position-relative h-100">
+                    <div class="d-flex align-items-center justify-content-center mx-auto mb-4"
+                        style="width: 64px; height: 64px; border: 2px solid #111; font-size: 1.2rem; font-weight: 700; color: #111;">
+                        01
+                    </div>
+                    <h6 class="fw-bold text-dark mb-2">Consultation</h6>
+                    <p class="text-muted mb-0" style="font-size: 0.85rem; line-height: 1.6;">
+                        Share your vision — budget, location, lifestyle needs. We listen and strategize.
+                    </p>
+                    <!-- Connector line (hidden on last) -->
+                    <div class="d-none d-lg-block position-absolute top-50 end-0 translate-middle-y"
+                        style="width: 50%; height: 1px; background-color: #e0e0e0;"></div>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="col-md-6 col-lg-3 gsap-process-step">
+                <div class="text-center px-4 py-5 position-relative h-100">
+                    <div class="d-flex align-items-center justify-content-center mx-auto mb-4"
+                        style="width: 64px; height: 64px; border: 2px solid #111; font-size: 1.2rem; font-weight: 700; color: #111;">
+                        02
+                    </div>
+                    <h6 class="fw-bold text-dark mb-2">Curated Selection</h6>
+                    <p class="text-muted mb-0" style="font-size: 0.85rem; line-height: 1.6;">
+                        Receive hand-picked listings with 3D tours, detailed reports, and virtual viewings.
+                    </p>
+                    <div class="d-none d-lg-block position-absolute top-50 end-0 translate-middle-y"
+                        style="width: 50%; height: 1px; background-color: #e0e0e0;"></div>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="col-md-6 col-lg-3 gsap-process-step">
+                <div class="text-center px-4 py-5 position-relative h-100">
+                    <div class="d-flex align-items-center justify-content-center mx-auto mb-4"
+                        style="width: 64px; height: 64px; border: 2px solid #111; font-size: 1.2rem; font-weight: 700; color: #111;">
+                        03
+                    </div>
+                    <h6 class="fw-bold text-dark mb-2">Secure Transaction</h6>
+                    <p class="text-muted mb-0" style="font-size: 0.85rem; line-height: 1.6;">
+                        Legal review, contract negotiation, and due diligence — all handled by our experts.
+                    </p>
+                    <div class="d-none d-lg-block position-absolute top-50 end-0 translate-middle-y"
+                        style="width: 50%; height: 1px; background-color: #e0e0e0;"></div>
+                </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="col-md-6 col-lg-3 gsap-process-step">
+                <div class="text-center px-4 py-5 position-relative h-100">
+                    <div class="d-flex align-items-center justify-content-center mx-auto mb-4"
+                        style="width: 64px; height: 64px; border: 2px solid #111; font-size: 1.2rem; font-weight: 700; color: #111;">
+                        04
+                    </div>
+                    <h6 class="fw-bold text-dark mb-2">Key Handover</h6>
+                    <p class="text-muted mb-0" style="font-size: 0.85rem; line-height: 1.6;">
+                        Finalize ownership, receive your keys, and enjoy ongoing portfolio support.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Featured Service Highlight -->
+<section class="py-5" style="background-color: #111;">
+    <div class="container py-5">
+        <div class="row align-items-center gy-5">
+            <div class="col-lg-6 gsap-highlight-img">
+                <div class="position-relative">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80"
+                        alt="Premium Property Interior" class="w-100 object-fit-cover shadow-sm"
+                        style="height: 500px;">
+                    <!-- Floating stat card -->
+                    <div class="position-absolute bg-white p-3 p-md-4 shadow-lg d-none d-md-block gsap-floating-card"
+                        style="bottom: -25px; right: -15px; min-width: 200px;">
+                        <p class="text-muted mb-1" style="font-size: 0.75rem;">Portfolio Growth</p>
+                        <h4 class="fw-bold text-dark mb-1">+34%</h4>
+                        <p class="text-muted mb-0" style="font-size: 0.75rem;">Year over year</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 offset-lg-1 gsap-highlight-text">
+                <span class="text-uppercase small fw-semibold d-block mb-3"
+                    style="font-size: 0.7rem; letter-spacing: 0.15em; color: rgba(255,255,255,0.4);">Featured Service</span>
+                <h2 class="display-5 fw-bold text-white mb-4" style="letter-spacing: -0.02em; line-height: 1.1;">
+                    Investment portfolio management
+                </h2>
+                <p class="text-white mb-4" style="opacity: 0.6; line-height: 1.7;">
+                    Our dedicated portfolio team monitors market trends, optimizes rental yields, and provides quarterly
+                    performance reports to ensure your investments consistently outperform.
+                </p>
+                <ul class="list-unstyled mb-5">
+                    <li class="d-flex align-items-center gap-3 mb-3">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0"
+                            style="width: 32px; height: 32px; border: 1px solid rgba(255,255,255,0.15);">
+                            <i class="bi bi-check2 text-white" style="font-size: 0.8rem;"></i>
+                        </div>
+                        <span class="text-white" style="opacity: 0.7; font-size: 0.9rem;">Real-time performance dashboards</span>
+                    </li>
+                    <li class="d-flex align-items-center gap-3 mb-3">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0"
+                            style="width: 32px; height: 32px; border: 1px solid rgba(255,255,255,0.15);">
+                            <i class="bi bi-check2 text-white" style="font-size: 0.8rem;"></i>
+                        </div>
+                        <span class="text-white" style="opacity: 0.7; font-size: 0.9rem;">Dedicated account manager</span>
+                    </li>
+                    <li class="d-flex align-items-center gap-3 mb-3">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0"
+                            style="width: 32px; height: 32px; border: 1px solid rgba(255,255,255,0.15);">
+                            <i class="bi bi-check2 text-white" style="font-size: 0.8rem;"></i>
+                        </div>
+                        <span class="text-white" style="opacity: 0.7; font-size: 0.9rem;">Quarterly financial reports</span>
+                    </li>
+                    <li class="d-flex align-items-center gap-3">
+                        <div class="d-flex align-items-center justify-content-center flex-shrink-0"
+                            style="width: 32px; height: 32px; border: 1px solid rgba(255,255,255,0.15);">
+                            <i class="bi bi-check2 text-white" style="font-size: 0.8rem;"></i>
+                        </div>
+                        <span class="text-white" style="opacity: 0.7; font-size: 0.9rem;">Tax optimization strategies</span>
+                    </li>
+                </ul>
+                <a routerLink="/contact" class="btn rounded-0 px-4 py-3 text-decoration-none"
+                    style="background-color: #fff; color: #111; font-weight: 500;">
+                    Schedule a consultation
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Testimonials -->
+<section class="py-5" style="background-color: #fafafa;">
+    <div class="container py-5">
+        <div class="text-center mb-5 gsap-testimonial-heading">
+            <span class="text-uppercase small fw-semibold d-block mb-3"
+                style="font-size: 0.7rem; letter-spacing: 0.15em; color: #999;">Client Stories</span>
+            <h2 class="display-5 fw-bold text-dark mb-0" style="letter-spacing: -0.02em;">
+                What our clients say
+            </h2>
+        </div>
+
+        <div class="row g-4">
+            <!-- Testimonial 1 -->
+            <div class="col-md-6 col-lg-4 gsap-testimonial-card">
+                <div class="bg-white p-4 p-lg-5 h-100 shadow-sm border-0">
+                    <div class="d-flex gap-1 mb-4">
+                        <i class="bi bi-star-fill" style="color: #111; font-size: 0.8rem;"></i>
+                        <i class="bi bi-star-fill" style="color: #111; font-size: 0.8rem;"></i>
+                        <i class="bi bi-star-fill" style="color: #111; font-size: 0.8rem;"></i>
+                        <i class="bi bi-star-fill" style="color: #111; font-size: 0.8rem;"></i>
+                        <i class="bi bi-star-fill" style="color: #111; font-size: 0.8rem;"></i>
+                    </div>
+                    <p class="text-dark mb-4" style="font-size: 0.95rem; line-height: 1.7; font-style: italic;">
+                        "Horizon Estate made our villa purchase in Mykonos seamless. From the first consultation to
+                        handing us the keys, every step was handled with precision and care."
+                    </p>
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="rounded-circle overflow-hidden flex-shrink-0" style="width: 48px; height: 48px;">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80"
+                                alt="Client" class="w-100 h-100 object-fit-cover">
+                        </div>
+                        <div>
+                            <h6 class="fw-bold text-dark mb-0" style="font-size: 0.9rem;">Sarah Mitchell</h6>
+                            <small class="text-muted" style="font-size: 0.8rem;">Private Investor, London</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="col-md-6 col-lg-4 gsap-testimonial-card">
+                <div class="bg-white p-4 p-lg-5 h-100 shadow-sm border-0">
+                    <div class="d-flex gap-1 mb-4">
+                        <i class="bi bi-star-fill" style="color: #111; font-size: 0.8rem;"></i>
+                        <i class="bi bi-star-fill" style="color: #111; font-size: 0.8rem;"></i>
+                        <i class="bi bi-star-fill" style="color: #111; font-size: 0.8rem;"></i>
+                        <i class="bi bi-star-fill" style="color: #111; font-size: 0.8rem;"></i>
+                        <i class="bi bi-star-fill" style="color: #111; font-size: 0.8rem;"></i>
+                    </div>
+                    <p class="text-dark mb-4" style="font-size: 0.95rem; line-height: 1.7; font-style: italic;">
+                        "Their investment advisory helped me achieve a 19% return on my Dubai property portfolio.
+                        The quarterly reports and market insights are invaluable."
+                    </p>
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="rounded-circle overflow-hidden flex-shrink-0" style="width: 48px; height: 48px;">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&q=80"
+                                alt="Client" class="w-100 h-100 object-fit-cover">
+                        </div>
+                        <div>
+                            <h6 class="fw-bold text-dark mb-0" style="font-size: 0.9rem;">Marcus Klein</h6>
+                            <small class="text-muted" style="font-size: 0.8rem;">Portfolio Manager, Zurich</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="col-md-6 col-lg-4 gsap-testimonial-card">
+                <div class="bg-white p-4 p-lg-5 h-100 shadow-sm border-0">
+                    <div class="d-flex gap-1 mb-4">
+                        <i class="bi bi-star-fill" style="color: #111; font-size: 0.8rem;"></i>
+                        <i class="bi bi-star-fill" style="color: #111; font-size: 0.8rem;"></i>
+                        <i class="bi bi-star-fill" style="color: #111; font-size: 0.8rem;"></i>
+                        <i class="bi bi-star-fill" style="color: #111; font-size: 0.8rem;"></i>
+                        <i class="bi bi-star-fill" style="color: #111; font-size: 0.8rem;"></i>
+                    </div>
+                    <p class="text-dark mb-4" style="font-size: 0.95rem; line-height: 1.7; font-style: italic;">
+                        "The concierge and relocation service was exceptional. They helped us settle into our new
+                        Tuscany residence with everything from interior design to local schools."
+                    </p>
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="rounded-circle overflow-hidden flex-shrink-0" style="width: 48px; height: 48px;">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&q=80"
+                                alt="Client" class="w-100 h-100 object-fit-cover">
+                        </div>
+                        <div>
+                            <h6 class="fw-bold text-dark mb-0" style="font-size: 0.9rem;">Elena Rossi</h6>
+                            <small class="text-muted" style="font-size: 0.8rem;">Entrepreneur, Milan</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- FAQ Section -->
+<section class="py-5" style="background-color: #fff;">
+    <div class="container py-5">
+        <div class="row gy-5">
+            <div class="col-lg-4 gsap-faq-heading">
+                <span class="text-uppercase small fw-semibold d-block mb-3"
+                    style="font-size: 0.7rem; letter-spacing: 0.15em; color: #999;">FAQs</span>
+                <h2 class="display-6 fw-bold text-dark mb-4" style="letter-spacing: -0.02em; line-height: 1.1;">
+                    Frequently asked questions
+                </h2>
+                <p class="text-muted mb-4" style="line-height: 1.7;">
+                    Can't find the answer you're looking for? Our team is here to help.
+                </p>
+                <a routerLink="/contact" class="btn btn-dark rounded-0 px-4 py-3"
+                    style="background-color: #111; font-weight: 500;">Contact us</a>
+            </div>
+            <div class="col-lg-7 offset-lg-1">
+                <div class="accordion" id="faqAccordion">
+
+                    <div class="accordion-item border-0 border-bottom gsap-faq-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-transparent fw-semibold text-dark px-0 py-4"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                What types of properties do you handle?
+                            </button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body px-0 pt-0 pb-4 text-muted" style="font-size: 0.9rem; line-height: 1.7;">
+                                We specialize in premium and luxury real estate including waterfront villas, urban
+                                penthouses, historical residences, commercial developments, and off-plan investment
+                                properties across 15+ countries.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-0 border-bottom gsap-faq-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-transparent fw-semibold text-dark px-0 py-4"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                How does the investment advisory work?
+                            </button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body px-0 pt-0 pb-4 text-muted" style="font-size: 0.9rem; line-height: 1.7;">
+                                Our advisory team analyzes market conditions, property valuations, rental yields, and
+                                projected IRR. We provide detailed financial models and risk assessments before you make
+                                any investment decision.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-0 border-bottom gsap-faq-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-transparent fw-semibold text-dark px-0 py-4"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                Do you offer international property services?
+                            </button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body px-0 pt-0 pb-4 text-muted" style="font-size: 0.9rem; line-height: 1.7;">
+                                Yes! We operate across Europe, the Middle East, Asia, and major markets worldwide.
+                                Our local partners and legal teams ensure seamless cross-border transactions.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-0 border-bottom gsap-faq-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-transparent fw-semibold text-dark px-0 py-4"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                What is the minimum investment amount?
+                            </button>
+                        </h2>
+                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body px-0 pt-0 pb-4 text-muted" style="font-size: 0.9rem; line-height: 1.7;">
+                                Investment thresholds vary by property and market. Our typical portfolio entries start
+                                from $5,000 for fractional investments and $50,000+ for direct property acquisitions.
+                                Contact us for personalized options.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item border-0 gsap-faq-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed bg-transparent fw-semibold text-dark px-0 py-4"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                How long does the property acquisition process take?
+                            </button>
+                        </h2>
+                        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body px-0 pt-0 pb-4 text-muted" style="font-size: 0.9rem; line-height: 1.7;">
+                                Depending on the market and legal requirements, a standard acquisition takes 4–12 weeks
+                                from initial consultation to key handover. We streamline every step to minimize delays.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- CTA Section -->
+<section class="py-5 position-relative overflow-hidden" style="background-color: #111;">
+    <div class="container py-5 position-relative" style="z-index: 2;">
+        <div class="row justify-content-center text-center gsap-cta-section">
+            <div class="col-lg-8">
+                <h2 class="display-5 fw-bold text-white mb-4" style="letter-spacing: -0.02em; line-height: 1.1;">
+                    Ready to start your<br>property journey?
+                </h2>
+                <p class="text-white mb-5 mx-auto" style="opacity: 0.6; max-width: 520px; line-height: 1.7;">
+                    Whether you're buying, investing, or relocating — our team of experts is ready to guide you every
+                    step of the way.
+                </p>
+                <div class="d-flex gap-3 justify-content-center flex-wrap">
+                    <a routerLink="/contact" class="btn rounded-0 px-5 py-3 text-decoration-none"
+                        style="background-color: #fff; color: #111; font-weight: 500;">
+                        Book a consultation
+                    </a>
+                    <a routerLink="/projects" class="btn btn-outline-light rounded-0 px-5 py-3"
+                        style="font-weight: 500; border-color: rgba(255,255,255,0.25);">
+                        View portfolio
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <app-footer></app-footer>

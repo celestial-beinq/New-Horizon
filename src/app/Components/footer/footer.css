@@ -1,0 +1,41 @@
+:host {
+  display: block;
+}
+
+.footer {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Social icon hover */
+.footer a[style*="width: 38px"]:hover {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  color: #fff !important;
+}
+
+/* Footer link hover effect */
+.footer-link {
+  transition: color 0.3s ease, padding-left 0.3s ease;
+  position: relative;
+}
+
+.footer-link:hover {
+  color: #fff !important;
+  padding-left: 6px;
+}
+
+/* Email input placeholder */
+.footer input::placeholder {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+.footer input:focus {
+  outline: none;
+  box-shadow: none;
+  background-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+/* Bottom links hover */
+.footer .gsap-footer-bottom a:hover {
+  color: #fff !important;
+}

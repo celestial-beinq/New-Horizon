@@ -1,5 +1,6 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
 .z-n1 {
     z-index: -1 !important
 }
@@ -13234,34 +13235,34 @@
 h1,
 h2,
 h3 {
-    letter-spacing: -.022rem  
+    letter-spacing: -.022rem
 }
 
-.bg-dark-green{
+.bg-dark-green {
     background-color: #1A332A !important;
 }
 
-.bg-lime{
+.bg-lime {
     background-color: #a3e635 !important;
 }
 
-.bg-mint{
+.bg-mint {
     background-color: #e2f4e3 !important;
 }
 
-.text-dark-green{
+.text-dark-green {
     color: #1A332A !important;
 }
 
-.text-lime{
+.text-lime {
     color: #a3e635 !important;
 }
 
-.text-mint{
+.text-mint {
     color: #faffe9 !important;
 }
 
-.text-dark{
+.text-dark {
     color: #000 !important;
 }
 
@@ -13384,10 +13385,11 @@ h3 {
     --geeks-dark-border-subtle: #64748b;
     --geeks-white-rgb: 255, 255, 255;
     --geeks-black-rgb: 0, 0, 0;
-    --geeks-font-sans-serif: 'Plus Jakarta Sans', sans-serif;;
+    --geeks-font-sans-serif: "Space Grotesk", sans-serif;
+    ;
     --geeks-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --geeks-gradient: linear-gradient(180deg, hsla(0, 0%, 100%, .15), hsla(0, 0%, 100%, 0));
-    --geeks-body-font-family: 'Plus Jakarta Sans', sans-serif;
+    --geeks-body-font-family: "Space Grotesk", sans-serif;
     --geeks-body-font-size: 0.938rem;
     --geeks-body-font-weight: 400;
     --geeks-body-line-height: 1.6;
@@ -13540,7 +13542,7 @@ h4,
 h5,
 h6 {
     color: var(--geeks-heading-color);
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: "Space Grotesk", sans-serif;
     font-weight: 500;
     line-height: 1.4;
     margin-bottom: .5rem;
@@ -17680,7 +17682,7 @@ textarea.form-control.is-invalid {
 .btn {
     --geeks-btn-padding-x: 1.25rem;
     --geeks-btn-padding-y: 0.75rem;
-    --geeks-btn-font-family: 'Plus Jakarta Sans', sans-serif;
+    --geeks-btn-font-family: "Space Grotesk", sans-serif;
     --geeks-btn-font-size: 0.875rem;
     --geeks-btn-font-weight: 600;
     --geeks-btn-line-height: 1.6;
@@ -20897,7 +20899,7 @@ fieldset:disabled .btn {
     --geeks-tooltip-arrow-width: 0.8rem;
     --geeks-tooltip-arrow-height: 0.4rem;
     display: block;
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: "Space Grotesk", sans-serif;
     font-size: var(--geeks-tooltip-font-size);
     font-style: normal;
     font-weight: 400;
@@ -21018,7 +21020,7 @@ fieldset:disabled .btn {
     --geeks-popover-arrow-height: 0.5rem;
     --geeks-popover-arrow-border: var(--geeks-popover-border-color);
     display: block;
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: "Space Grotesk", sans-serif;
     font-size: var(--geeks-popover-font-size);
     font-style: normal;
     font-weight: 400;
@@ -41650,7 +41652,9 @@ body {
     width: 100% !important
 }
 
-*, :after, :before {
+*,
+:after,
+:before {
     box-sizing: border-box;
 }
 

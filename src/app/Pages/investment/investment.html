@@ -1,0 +1,560 @@
+<app-header></app-header>
+
+<!-- Hero Banner -->
+<section class="position-relative overflow-hidden" style="background-color: #0a0a0a; min-height: 85vh;">
+    <div class="position-absolute w-100 h-100 top-0 start-0 gsap-inv-bg" style="z-index: 0;">
+        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1800&q=90"
+            alt="Premium Real Estate Investment"
+            class="w-100 h-100 object-fit-cover"
+            style="transform: scale(1.05); transition: transform 5s ease-out;">
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(
+                90deg, rgba(0,0,0,0.8) 0%,
+                rgba(0,0,0,0.5) 45%,
+                rgba(0,0,0,0.6) 100%
+            );"></div>
+    </div>
+
+    <div class="container position-relative d-flex flex-column justify-content-center"
+        style="z-index: 2; min-height: 85vh; padding-top: 100px;">
+        <div class="row align-items-center">
+            <div class="col-lg-7">
+                <div class="gsap-inv-hero border-start border-2 ps-4 mb-4" style="border-color: #c9a84c !important;">
+                    <span class="d-inline-block text-uppercase fw-bold mb-2"
+                        style="font-size: 0.7rem; letter-spacing: 0.25em; color: #c9a84c;">
+                        Wealth Preservation & Growth
+                    </span>
+                    <h1 class="display-2 fw-bold text-white mb-0" style="letter-spacing: -0.03em; line-height: 1.05;">
+                        Invest in<br>Tomorrow's Landmarks.
+                    </h1>
+                </div>
+                <p class="gsap-inv-hero text-white mb-5 fs-5" style="opacity: 0.8; max-width: 580px; line-height: 1.7;">
+                    Access institutional-grade real estate investments with projected returns of 14–22% IRR. From pre-construction luxury developments to income-generating trophy assets in prime locations like Ikoyi, Banana Island, and Victoria Island.
+                </p>
+                <div class="gsap-inv-hero d-flex gap-3 align-items-center flex-wrap">
+                    <button class="btn rounded-0 px-5 py-3 text-uppercase fw-bold text-white border-0"
+                        style="background-color: #000; font-size: 0.8rem; letter-spacing: 0.08em; transition: all 0.3s ease;">
+                        Request Investment Memo
+                    </button>
+                    <a href="#opportunities" class="text-white border border-white py-3 px-4 text-decoration-none d-flex align-items-center gap-2 fw-bold"
+                        style="font-size: 0.85rem; transition: opacity 0.3s ease;"
+                        onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">
+                        View Opportunities <i class="bi bi-arrow-down"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Floating Stats Card -->
+            <div class="col-lg-4 offset-lg-1 d-none d-lg-block gsap-inv-hero">
+                <div class="p-4 border position-relative overflow-hidden"
+                    style="background: rgba(255,255,255,0.05); backdrop-filter: blur(20px); border-color: rgba(255,255,255,0.1) !important;">
+                    <div class="position-absolute top-0 end-0 p-3 opacity-25">
+                        <i class="bi bi-graph-up-arrow fs-3 text-white"></i>
+                    </div>
+                    <p class="text-white-50 text-uppercase fw-bold mb-1" style="font-size: 0.6rem; letter-spacing: 0.15em;">Total Capital Deployed</p>
+                    <h3 class="fw-bold text-white mb-4" style="font-size: 2.2rem; letter-spacing: -0.02em;">$1.8B+</h3>
+                    <div class="row g-0 pt-3 border-top border-secondary">
+                        <div class="col-4">
+                            <h5 class="fw-bold mb-0" style="color: #c9a84c;">18.4%</h5>
+                            <p class="text-white-50 mb-0" style="font-size: 0.7rem;">Avg. IRR</p>
+                        </div>
+                        <div class="col-4 border-start border-secondary ps-3">
+                            <h5 class="text-white fw-bold mb-0">0%</h5>
+                            <p class="text-white-50 mb-0" style="font-size: 0.7rem;">Default Rate</p>
+                        </div>
+                        <div class="col-4 border-start border-secondary ps-3">
+                            <h5 class="text-white fw-bold mb-0">47</h5>
+                            <p class="text-white-50 mb-0" style="font-size: 0.7rem;">Exits</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Performance Metrics Bar -->
+<section style="background-color: #fff; border-bottom: 1px solid #eaeaea; position: sticky; top: 0; z-index: 100; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+    <div class="container py-4">
+        <div class="row g-4 text-center">
+            <div class="col-6 col-md-3 gsap-inv-stat">
+                <h2 class="display-5 fw-bold text-dark mb-1" style="letter-spacing: -0.02em;">14–22%</h2>
+                <p class="text-muted mb-0 text-uppercase fw-bold" style="font-size: 0.7rem; letter-spacing: 0.12em;">Projected IRR</p>
+            </div>
+            <div class="col-6 col-md-3 gsap-inv-stat">
+                <h2 class="display-5 fw-bold text-dark mb-1" style="letter-spacing: -0.02em;">$50K</h2>
+                <p class="text-muted mb-0 text-uppercase fw-bold" style="font-size: 0.7rem; letter-spacing: 0.12em;">Minimum Entry</p>
+            </div>
+            <div class="col-6 col-md-3 gsap-inv-stat">
+                <h2 class="display-5 fw-bold text-dark mb-1" style="letter-spacing: -0.02em;">2–5 Yr</h2>
+                <p class="text-muted mb-0 text-uppercase fw-bold" style="font-size: 0.7rem; letter-spacing: 0.12em;">Hold Period</p>
+            </div>
+            <div class="col-6 col-md-3 gsap-inv-stat">
+                <h2 class="display-5 fw-bold text-dark mb-1" style="letter-spacing: -0.02em;">100%</h2>
+                <p class="text-muted mb-0 text-uppercase fw-bold" style="font-size: 0.7rem; letter-spacing: 0.12em;">Capital Return</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Invest With Us -->
+<section class="py-5" style="background-color: #faf8f8;">
+    <div class="container py-5">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6 gsap-inv-why-text">
+                <span class="text-uppercase fw-bold mb-3 d-inline-block px-3 py-1 bg-dark text-white shadow-sm"
+                    style="font-size: 0.65rem; letter-spacing: 0.2em;">The Horizon Advantage</span>
+                <h2 class="display-5 fw-bold text-dark mb-4" style="letter-spacing: -0.02em; line-height: 1.1;">
+                    Why Sophisticated<br>Investors Choose Us.
+                </h2>
+                <p class="text-muted fs-5 mb-5" style="line-height: 1.7;">
+                    We combine institutional-grade underwriting with exclusive off-market sourcing in prime Lagos locations to deliver returns that consistently outperform traditional real estate vehicles.
+                </p>
+
+                <div class="d-flex flex-column gap-4">
+                    <div class="d-flex align-items-start gap-4">
+                        <div class="d-flex align-items-center justify-content-center bg-dark text-white flex-shrink-0 shadow-sm" style="width: 54px; height: 54px; border-radius: 4px;">
+                            <i class="bi bi-shield-check fs-4"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold text-dark mb-1">Capital Protection First</h5>
+                            <p class="text-muted mb-0 small" style="line-height: 1.5;">Multi-layered risk mitigation with senior secured positions and asset-backed guarantees on every allocation.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start gap-4">
+                        <div class="d-flex align-items-center justify-content-center bg-dark text-white flex-shrink-0 shadow-sm" style="width: 54px; height: 54px; border-radius: 4px;">
+                            <i class="bi bi-bar-chart-line fs-4"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold text-dark mb-1">Asymmetric Returns</h5>
+                            <p class="text-muted mb-0 small" style="line-height: 1.5;">Access pre-construction pricing 15–30% below market value, creating built-in equity from day one.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start gap-4">
+                        <div class="d-flex align-items-center justify-content-center bg-dark text-white flex-shrink-0 shadow-sm" style="width: 54px; height: 54px; border-radius: 4px;">
+                            <i class="bi bi-people fs-4"></i>
+                        </div>
+                        <div>
+                            <h5 class="fw-bold text-dark mb-1">Co-Investment Model</h5>
+                            <p class="text-muted mb-0 small" style="line-height: 1.5;">Our principals invest alongside every client. We only win when you win — full alignment of interest.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 gsap-inv-why-img">
+                <div class="position-relative">
+                    <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1000&q=80"
+                        alt="Premium Interior" class="w-100 object-fit-cover shadow-lg" style="height: 600px; border-radius: 4px;">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Returns & Timelines -->
+<section class="py-5" style="background-color: #ffffff;">
+    <div class="container py-5 border-top border-light">
+        <div class="row mb-5 justify-content-center text-center gsap-inv-returns-heading">
+            <div class="col-lg-8">
+                <span class="text-uppercase fw-bold d-block mb-3" style="font-size: 0.75rem; letter-spacing: 0.2em; color: #888;">Growth Profile</span>
+                <h2 class="display-6 fw-bold text-dark mb-3" style="letter-spacing: -0.02em;">
+                    Target Returns & Estimated Timelines
+                </h2>
+                <p class="text-muted mx-auto" style="max-width: 650px; line-height: 1.7;">
+                    Our investment vehicles are structured to deliver strong cash yields and substantial equity multiples across distinct holding periods, clearly modeling your wealth trajectory.
+                </p>
+            </div>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+            <!-- Returns Card 1 -->
+            <div class="col-md-6 col-lg-5 gsap-inv-yield">
+                <div class="card h-100 border-0 shadow-sm rounded-0 p-4 p-md-5">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="bg-dark text-white p-3 me-3">
+                            <i class="bi bi-building fs-4"></i>
+                        </div>
+                        <div>
+                            <h4 class="fw-bold text-dark mb-0">Development Funds</h4>
+                            <p class="text-muted mb-0 small">Growth & Capital Appreciation</p>
+                        </div>
+                    </div>
+                    <ul class="list-unstyled mb-4 text-muted small flex-grow-1" style="line-height: 1.8;">
+                        <li class="mb-2"><i class="bi bi-check2 text-dark me-2"></i><strong>Target IRR:</strong> 18% – 22% annualized</li>
+                        <li class="mb-2"><i class="bi bi-check2 text-dark me-2"></i><strong>Timeline:</strong> 24 to 36 Months</li>
+                        <li class="mb-2"><i class="bi bi-check2 text-dark me-2"></i><strong>Equity Multiple:</strong> 1.5x – 1.8x</li>
+                        <li><i class="bi bi-check2 text-dark me-2"></i><strong>Distribution:</strong> Capital and profits returned at exit or refinancing event upon completion.</li>
+                    </ul>
+                    <div class="mt-auto border-top border-light pt-4">
+                        <p class="text-muted mb-0" style="font-size: 0.75rem;">Best for investors seeking maximum capital growth via forced appreciation in prime development zones.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Returns Card 2 -->
+            <div class="col-md-6 col-lg-5 gsap-inv-yield">
+                <div class="card h-100 border-0 shadow-sm rounded-0 p-4 p-md-5">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="bg-light text-dark p-3 border border-dark me-3">
+                            <i class="bi bi-house-check fs-4"></i>
+                        </div>
+                        <div>
+                            <h4 class="fw-bold text-dark mb-0">Income Portfolios</h4>
+                            <p class="text-muted mb-0 small">Cash Flow & Stabilized Yields</p>
+                        </div>
+                    </div>
+                    <ul class="list-unstyled mb-4 text-muted small flex-grow-1" style="line-height: 1.8;">
+                        <li class="mb-2"><i class="bi bi-check2 text-dark me-2"></i><strong>Target Cash Yield:</strong> 8% – 12% annual</li>
+                        <li class="mb-2"><i class="bi bi-check2 text-dark me-2"></i><strong>Timeline:</strong> 3 to 5+ Years (Flexible)</li>
+                        <li class="mb-2"><i class="bi bi-check2 text-dark me-2"></i><strong>Target IRR:</strong> 12% – 15% (including gains)</li>
+                        <li><i class="bi bi-check2 text-dark me-2"></i><strong>Distribution:</strong> Quarterly dividend payouts with distinct liquidity windows natively mapped.</li>
+                    </ul>
+                    <div class="mt-auto border-top border-light pt-4">
+                        <p class="text-muted mb-0" style="font-size: 0.75rem;">Best for investors targeting consistent passive income backed by AAA-tenant luxury rentals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Insurance, Security & Payment Flexibility -->
+<section class="py-5" style="background-color: #0a0a0a; color: #fff;">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-5 gsap-inv-security-text">
+                <span class="text-uppercase fw-bold mb-3 d-inline-block px-3 py-1 bg-white text-dark shadow-sm"
+                    style="font-size: 0.65rem; letter-spacing: 0.2em;">Structurally Secured</span>
+                <h2 class="display-6 fw-bold mb-4 text-white" style="letter-spacing: -0.02em; line-height: 1.1;">
+                    Your Capital,<br>Insured & Protected.
+                </h2>
+                <p class="fs-6 mb-5" style="line-height: 1.7; opacity: 0.8;">
+                    We establish rigorous institutional safety frameworks. By mitigating ground-up downside risk, we preserve the upside exclusively for our partners.
+                </p>
+
+                <div class="d-flex align-items-start gap-3 mb-4">
+                    <i class="bi bi-lock-fill fs-3 text-warning"></i>
+                    <div>
+                        <h5 class="fw-bold mb-1 text-white">Asset-Backed Security</h5>
+                        <p class="small mb-0" style="opacity: 0.7; line-height: 1.6;">Investments are held in bankruptcy-remote Special Purpose Vehicles (SPVs). You hold physical equity proportional to your capital.</p>
+                    </div>
+                </div>
+                
+                <div class="d-flex align-items-start gap-3 mb-4">
+                    <i class="bi bi-shield-check fs-3 text-warning"></i>
+                    <div>
+                        <h5 class="fw-bold mb-1 text-white">Comprehensive Insurance</h5>
+                        <p class="small mb-0" style="opacity: 0.7; line-height: 1.6;">All developments are underwritten by A-rated insurers, including full Contractors All Risk (CAR), severe structural indemnity, and comprehensive title insurance.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 offset-lg-1 gsap-inv-payment">
+                <div class="bg-white p-4 p-md-5 text-dark border-top border-warning" style="border-width: 4px !important;">
+                    <h3 class="fw-bold mb-4">Payment Flexibility</h3>
+                    <p class="text-muted mb-4 small" style="line-height: 1.7;">
+                        Deploying capital should be as seamless as the returns. We offer highly tailored, staggered disbursement structures designed to integrate intelligently with your cash flow and liquidity events.
+                    </p>
+
+                    <div class="mb-4">
+                        <h6 class="fw-bold d-flex justify-content-between">
+                            <span>Milestone Structuring</span>
+                            <span class="text-warning">0% Interest</span>
+                        </h6>
+                        <p class="text-muted small" style="line-height: 1.6;">
+                            Rather than committing 100% upfront, off-plan investments are strictly structured around construction milestones. You are only required to remit payments as independently verified value is added to the site.
+                        </p>
+                    </div>
+                    
+                    <div class="mb-4">
+                        <h6 class="fw-bold">Global Escrow Facility</h6>
+                        <p class="text-muted small mb-0" style="line-height: 1.6;">
+                            Initial deposits are held securely in independent, Tier-1 banking escrow accounts until the legal cooling-off period concludes and definitive title verification is successfully finalized.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h6 class="fw-bold">Leveraged Financing Integration</h6>
+                        <p class="text-muted small mb-0" style="line-height: 1.6;">
+                            For allocations above $250k, New Horizon can refer preferred tier-1 banking affiliates offering exclusive mortgage rates and leveraged LTV structuring against your allocation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Active Opportunities -->
+<section id="opportunities" class="py-5" style="background-color: #f8f9fa;">
+    <div class="container py-5 border-top border-light">
+        <div class="d-flex justify-content-between align-items-end mb-5 flex-wrap gap-3 gsap-inv-opp-heading">
+            <div>
+                <span class="text-uppercase fw-bold d-block mb-2" style="font-size: 0.75rem; letter-spacing: 0.2em; color: #888;">Current Allocations</span>
+                <h2 class="display-6 fw-bold text-dark mb-0" style="letter-spacing: -0.02em;">
+                    Active Opportunities
+                </h2>
+            </div>
+            <p class="text-muted mb-0 fw-medium" style="font-size: 0.95rem; max-width: 350px;">
+                Each opportunity is individually underwritten and structured to maximize risk-adjusted returns.
+            </p>
+        </div>
+
+        <div class="row g-5">
+            <!-- Opportunity 1: Featured -->
+            <div class="col-lg-12 gsap-inv-opp-card">
+                <div class="card bg-white border-0 shadow-sm h-100 rounded-0 overflow-hidden custom-opp-hover">
+                    <div class="row g-0 h-100">
+                        <div class="col-md-7">
+                            <div class="overflow-hidden h-100" style="min-height: 450px;">
+                                <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80"
+                                    alt="Lekki Phase 1 Development" class="w-100 h-100 object-fit-cover opp-img">
+                            </div>
+                        </div>
+                        <div class="col-md-5 d-flex flex-column p-4 p-md-5">
+                            <div class="mb-auto">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="badge bg-dark rounded-0 text-uppercase fw-bold py-2 px-3 shadow-sm" style="font-size: 0.65rem; letter-spacing: 0.15em;">FEATURED</span>
+                                    <span class="text-uppercase fw-bold" style="font-size: 0.7rem; letter-spacing: 0.1em; color: #c9a84c;">72% Funded</span>
+                                </div>
+                                <h3 class="fw-bold text-dark mb-2">The Meridian Towers</h3>
+                                <p class="text-muted mb-3" style="font-size: 0.9rem;"><i class="bi bi-geo-alt me-1 text-dark"></i>Lekki Phase 1, Lagos</p>
+                                <p class="text-muted small mb-4" style="line-height: 1.7;">
+                                    A 22-floor twin-tower luxury residential development offering 180° ocean views. Pre-construction pricing at 28% below projected market value upon completion.
+                                </p>
+                            </div>
+
+                            <div>
+                                <!-- Progress Bar -->
+                                <div class="mb-4">
+                                    <div class="d-flex justify-content-between mb-2">
+                                        <span class="text-muted small fw-bold">Funding Progress</span>
+                                        <span class="text-dark small fw-bold">$14.4M / $20M</span>
+                                    </div>
+                                    <div class="progress rounded-0" style="height: 6px; background-color: #eee;">
+                                        <div class="progress-bar gsap-progress-bar" role="progressbar" style="width: 0%; background-color: #111;" data-width="72"></div>
+                                    </div>
+                                </div>
+
+                                <div class="row g-3 mb-4">
+                                    <div class="col-4 text-center border-end border-light">
+                                        <h5 class="fw-bold text-dark mb-0">22%</h5>
+                                        <p class="text-muted mb-0 text-uppercase" style="font-size: 0.6rem; letter-spacing: 0.1em;">Target IRR</p>
+                                    </div>
+                                    <div class="col-4 text-center border-end border-light">
+                                        <h5 class="fw-bold text-dark mb-0">3 Yr</h5>
+                                        <p class="text-muted mb-0 text-uppercase" style="font-size: 0.6rem; letter-spacing: 0.1em;">Hold</p>
+                                    </div>
+                                    <div class="col-4 text-center">
+                                        <h5 class="fw-bold text-dark mb-0">$100K</h5>
+                                        <p class="text-muted mb-0 text-uppercase" style="font-size: 0.6rem; letter-spacing: 0.1em;">Min. Entry</p>
+                                    </div>
+                                </div>
+
+                                <button class="btn btn-dark rounded-0 w-100 py-3 text-uppercase fw-bold shadow-sm custom-btn-hover" style="font-size: 0.8rem; letter-spacing: 0.08em;">
+                                    Request Full Memo
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Opportunity 2 -->
+            <div class="col-lg-4 gsap-inv-opp-card">
+                <div class="card bg-white border-0 shadow-sm h-100 rounded-0 overflow-hidden custom-opp-hover">
+                    <div class="position-relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?w=1000&q=80"
+                            alt="Banana Island Residence" class="w-100 object-fit-cover opp-img" style="height: 250px;">
+                        <span class="position-absolute top-0 start-0 m-3 badge bg-white text-dark rounded-0 fw-bold py-2 px-3 shadow-sm" style="font-size: 0.65rem; letter-spacing: 0.15em;">INCOME FUND</span>
+                    </div>
+                    <div class="card-body p-4 d-flex flex-column">
+                        <h4 class="fw-bold text-dark mb-2">Banana Island Yield</h4>
+                        <p class="text-muted mb-3" style="font-size: 0.85rem;"><i class="bi bi-geo-alt me-1 text-dark"></i>Banana Island, Lagos</p>
+                        <p class="text-muted small mb-4 flex-grow-1" style="line-height: 1.7;">
+                            Stabilized income-producing luxury rentals generating 8.5% annual cash distributions with capital appreciation upside.
+                        </p>
+
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="text-muted small fw-bold">Funding</span>
+                                <span class="text-dark small fw-bold">89%</span>
+                            </div>
+                            <div class="progress rounded-0" style="height: 6px; background-color: #eee;">
+                                <div class="progress-bar gsap-progress-bar" role="progressbar" style="width: 0%; background-color: #c9a84c;" data-width="89"></div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between text-center border-top border-light pt-3 mb-4">
+                            <div><h6 class="fw-bold text-dark mb-0">14%</h6><p class="text-muted mb-0 text-uppercase" style="font-size: 0.6rem;">IRR</p></div>
+                            <div><h6 class="fw-bold text-dark mb-0">5 Yr</h6><p class="text-muted mb-0 text-uppercase" style="font-size: 0.6rem;">Hold</p></div>
+                            <div><h6 class="fw-bold text-dark mb-0">$50K</h6><p class="text-muted mb-0 text-uppercase" style="font-size: 0.6rem;">Min</p></div>
+                        </div>
+
+                        <button class="btn btn-outline-dark rounded-0 w-100 py-2 text-uppercase fw-bold mt-auto border-2 custom-btn-outline-hover" style="font-size: 0.75rem; letter-spacing: 0.1em;">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Opportunity 3 -->
+            <div class="col-lg-4 gsap-inv-opp-card">
+                <div class="card bg-white border-0 shadow-sm h-100 rounded-0 overflow-hidden custom-opp-hover">
+                    <div class="position-relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1000&q=80"
+                            alt="Ikoyi Commercial" class="w-100 object-fit-cover opp-img" style="height: 250px;">
+                        <span class="position-absolute top-0 start-0 m-3 badge bg-white text-dark rounded-0 fw-bold py-2 px-3 shadow-sm" style="font-size: 0.65rem; letter-spacing: 0.15em;">VALUE-ADD</span>
+                    </div>
+                    <div class="card-body p-4 d-flex flex-column">
+                        <h4 class="fw-bold text-dark mb-2">Ikoyi Grand Residences</h4>
+                        <p class="text-muted mb-3" style="font-size: 0.85rem;"><i class="bi bi-geo-alt me-1 text-dark"></i>Ikoyi, Lagos</p>
+                        <p class="text-muted small mb-4 flex-grow-1" style="line-height: 1.7;">
+                            Class-A renovation of a heritage Ikoyi estate into 12 ultra-premium apartments targeting diplomatic and executive clientele.
+                        </p>
+
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="text-muted small fw-bold">Funding</span>
+                                <span class="text-dark small fw-bold">56%</span>
+                            </div>
+                            <div class="progress rounded-0" style="height: 6px; background-color: #eee;">
+                                <div class="progress-bar gsap-progress-bar" role="progressbar" style="width: 0%; background-color: #111;" data-width="56"></div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between text-center border-top border-light pt-3 mb-4">
+                            <div><h6 class="fw-bold text-dark mb-0">19%</h6><p class="text-muted mb-0 text-uppercase" style="font-size: 0.6rem;">IRR</p></div>
+                            <div><h6 class="fw-bold text-dark mb-0">2.5 Yr</h6><p class="text-muted mb-0 text-uppercase" style="font-size: 0.6rem;">Hold</p></div>
+                            <div><h6 class="fw-bold text-dark mb-0">$75K</h6><p class="text-muted mb-0 text-uppercase" style="font-size: 0.6rem;">Min</p></div>
+                        </div>
+
+                        <button class="btn btn-outline-dark rounded-0 w-100 py-2 text-uppercase fw-bold mt-auto border-2 custom-btn-outline-hover" style="font-size: 0.75rem; letter-spacing: 0.1em;">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Opportunity 4: Restricted -->
+            <div class="col-lg-4 gsap-inv-opp-card">
+                <div class="card bg-white border border-secondary border-opacity-25 shadow-sm h-100 rounded-0 overflow-hidden position-relative custom-opp-hover">
+                    <div class="position-relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1000&q=80"
+                            alt="Restricted Opportunity" class="w-100 object-fit-cover opp-img" style="height: 250px; filter: blur(8px) grayscale(50%); opacity: 0.8;">
+                        <span class="position-absolute top-0 start-0 m-3 badge bg-dark text-white rounded-0 fw-bold py-2 px-3 shadow-sm text-uppercase" style="font-size: 0.65rem; letter-spacing: 0.15em;">RESTRICTED</span>
+                        <div class="position-absolute top-50 start-50 translate-middle">
+                            <div class="rounded-circle bg-white shadow-lg d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                                <i class="bi bi-lock-fill fs-5 text-dark"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body p-4 d-flex flex-column text-center">
+                        <h4 class="fw-bold text-dark mb-2">Chevron Drive Fund III</h4>
+                        <p class="text-muted mb-3" style="font-size: 0.85rem;"><i class="bi bi-geo-alt me-1 text-dark"></i>Chevron, Lagos</p>
+                        <p class="text-muted small mb-4 flex-grow-1" style="line-height: 1.7;">
+                            Accredited investors only. Minimum allocation of $250K. NDA required before disclosure.
+                        </p>
+                        <button class="btn rounded-0 w-100 py-2 text-uppercase fw-bold text-white border-0 mt-auto custom-btn-hover"
+                            style="background-color: #c9a84c; font-size: 0.75rem; letter-spacing: 0.1em;">
+                            Request NDA
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How to Invest Process -->
+<section class="py-5" style="background-color: #ffffff;">
+    <div class="container py-5">
+        <div class="text-center mb-5 gsap-inv-process-heading">
+            <span class="text-uppercase fw-bold d-block mb-3" style="font-size: 0.75rem; letter-spacing: 0.2em; color: #888;">How To Invest</span>
+            <h2 class="display-5 fw-bold text-dark mb-3" style="letter-spacing: -0.02em;">
+                From Interest to Allocation<br>in Four Simple Steps.
+            </h2>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3 gsap-inv-step">
+                <div class="text-center p-4 p-lg-3 p-xl-4 h-100 bg-light rounded-2 custom-step-hover">
+                    <div class="d-inline-flex align-items-center justify-content-center mb-4 bg-white shadow-sm" style="width: 64px; height: 64px; border-radius: 50%;">
+                        <span class="fw-bold text-dark fs-4">01</span>
+                    </div>
+                    <h5 class="fw-bold text-dark mb-2">Qualification</h5>
+                    <p class="text-muted small mb-0" style="line-height: 1.7;">
+                        Complete our brief investor questionnaire. We verify your readiness and investment thesis alignment within 24 hours.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 gsap-inv-step">
+                <div class="text-center p-4 p-lg-3 p-xl-4 h-100 bg-light rounded-2 custom-step-hover">
+                    <div class="d-inline-flex align-items-center justify-content-center mb-4 bg-white shadow-sm" style="width: 64px; height: 64px; border-radius: 50%;">
+                        <span class="fw-bold text-dark fs-4">02</span>
+                    </div>
+                    <h5 class="fw-bold text-dark mb-2">Due Diligence</h5>
+                    <p class="text-muted small mb-0" style="line-height: 1.7;">
+                        Receive comprehensive offering memorandums and financial models for properties, followed by a direct strategy meeting.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 gsap-inv-step">
+                <div class="text-center p-4 p-lg-3 p-xl-4 h-100 bg-light rounded-2 custom-step-hover">
+                    <div class="d-inline-flex align-items-center justify-content-center mb-4 bg-dark shadow-sm" style="width: 64px; height: 64px; border-radius: 50%;">
+                        <span class="fw-bold text-white fs-4">03</span>
+                    </div>
+                    <h5 class="fw-bold text-dark mb-2">Capital Commitment</h5>
+                    <p class="text-muted small mb-0" style="line-height: 1.7;">
+                        Execute subscription documents digitally and fund your tranches into our secured global escrow facility safely.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 gsap-inv-step">
+                <div class="text-center p-4 p-lg-3 p-xl-4 h-100 bg-light rounded-2 custom-step-hover">
+                    <div class="d-inline-flex align-items-center justify-content-center mb-4 bg-white shadow-sm" style="width: 64px; height: 64px; border-radius: 50%;">
+                        <span class="fw-bold text-dark fs-4">04</span>
+                    </div>
+                    <h5 class="fw-bold text-dark mb-2">Portfolio Monitoring</h5>
+                    <p class="text-muted small mb-0" style="line-height: 1.7;">
+                        Gain instant access to our private portal tracking real-time asset NAV, quarterly dividends, and visual progression.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Final CTA -->
+<section class="py-5 position-relative overflow-hidden" style="background-color: #0a0a0a;">
+    <div class="position-absolute w-100 h-100 top-0 start-0 z-0">
+        <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?w=1600&q=80"
+            alt="Luxury Estate" class="w-100 h-100 object-fit-cover" style="opacity: 0.15; filter: grayscale(50%);">
+    </div>
+    <div class="container py-5 my-md-5 position-relative z-2">
+        <div class="row justify-content-center text-center gsap-inv-cta">
+            <div class="col-lg-8">
+                <i class="bi bi-graph-up-arrow mb-4 d-block" style="font-size: 3rem; color: #c9a84c;"></i>
+                <h2 class="display-5 fw-bold text-white mb-4" style="letter-spacing: -0.02em;">
+                    Your Wealth Deserves<br>More Than Average Returns.
+                </h2>
+                <p class="text-white mb-5 mx-auto fs-5" style="opacity: 0.8; max-width: 600px; line-height: 1.7;">
+                    Schedule a confidential strategy session with our investment directors. Discover how New Horizon can transform your real estate allocation.
+                </p>
+                <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center align-items-center">
+                    <button class="btn rounded-0 px-5 py-3 text-uppercase fw-bold text-dark border-0 custom-btn-hover"
+                        style="background-color: #c9a84c; font-size: 0.85rem; letter-spacing: 0.1em;">
+                        Schedule Strategy Call
+                    </button>
+                    <a routerLink="/contact"
+                        class="text-white text-decoration-none border-bottom border-light pb-1 ms-sm-3 fw-bold"
+                        style="transition: opacity 0.3s ease;"
+                        onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">
+                        Contact our team
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<app-footer></app-footer>

@@ -1,0 +1,358 @@
+<app-header></app-header>
+
+<!-- Hero Banner (Cinematic Light Mode with Rotating Image) -->
+<section class="position-relative overflow-hidden" style="background-color: #faf8f8; min-height: 80vh;">
+    <div class="position-absolute w-100 h-100 top-0 start-0 gsap-prop-bg" style="z-index: 0;">
+        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1600&q=90" alt="Luxury Modern Villa"
+            class="w-100 h-100 object-fit-cover" style="transform: scale(1.05); transition: transform 5s ease-out;">
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(
+                90deg,  rgba(0,0,0,0.75) 0%,
+                rgba(0,0,0,0.45) 45%,
+                rgba(0,0,0,0.55) 100%
+            );">
+        </div>
+    </div>
+
+    <div class="container position-relative d-flex flex-column justify-content-center"
+        style="z-index: 2; min-height: 80vh; padding-top: 80px;">
+        <div class="row">
+            <div class="col-lg-8 col-xl-7">
+                <div class="gsap-prop-hero border-start border-2 ps-4 mb-4" style="border-color: #fff !important;">
+                    <span class="d-inline-block text-uppercase fw-bold mb-2"
+                        style="font-size: 0.75rem; letter-spacing: 0.2em; color: #c9a84c;">
+                        The Private Collection
+                    </span>
+                    <h1 class="display-3 fw-bold text-white mb-0" style="letter-spacing: -0.02em; line-height: 1.1;">
+                        Curated assets for<br>the global elite.
+                    </h1>
+                </div>
+                <p class="gsap-prop-hero text-white mb-5 fs-5" style="opacity: 0.8; max-width: 600px; line-height: 1.6;">
+                    Explore our hyper-curated portfolio of ultra-luxury residences, trophy assets, and private estates.
+                    70% of our collection is strictly off-market.
+                </p>
+                <div class="gsap-prop-hero d-flex gap-4 align-items-center flex-wrap">
+                    <button class="btn rounded-0 px-5 py-3 text-uppercase fw-bold text-white"
+                        style="background-color: #000; font-size: 0.85rem; letter-spacing: 0.05em; transition: all 0.3s ease;">
+                        Request Access
+                    </button>
+                    <a href="#portfolio" class="text-white border border-white py-3 px-4 text-decoration-none d-flex align-items-center gap-2 fw-bold"
+                        style="font-size: 0.95rem; transition: opacity 0.3s ease;"
+                        onmouseover="this.style.opacity='0.7'" onmouseout="this.style.opacity='1'">
+                        Browse Public Listings <i class="bi bi-arrow-down"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Advanced Filter Bar -->
+<section
+    style="background-color: #ffffff; border-bottom: 1px solid #eaeaea; position: sticky; top: 0; z-index: 100; box-shadow: 0 4px 20px rgba(0,0,0,0.02);">
+    <div class="container py-4">
+        <div class="row g-3 align-items-end gsap-filter-bar">
+            <div class="col-md-3">
+                <label class="form-label text-uppercase fw-bold mb-2"
+                    style="font-size: 0.65rem; letter-spacing: 0.15em; color: #888;">Global
+                    Region</label>
+                <select
+                    class="form-select rounded-0 bg-transparent text-dark border-secondary py-2 custom-select-light">
+                    <option selected value="all">All Regions</option>
+                    <option value="emea">EMEA (Europe, Middle East)</option>
+                    <option value="nam">North America</option>
+                    <option value="apac">Asia-Pacific</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label class="form-label text-uppercase fw-bold mb-2"
+                    style="font-size: 0.65rem; letter-spacing: 0.15em; color: #888;">Asset
+                    Class</label>
+                <select
+                    class="form-select rounded-0 bg-transparent text-dark border-secondary py-2 custom-select-light">
+                    <option selected value="all">All Classes</option>
+                    <option value="villa">Ultra-Luxury Villas</option>
+                    <option value="penthouse">Trophy Penthouses</option>
+                    <option value="estate">Private Estates</option>
+                    <option value="commercial">Premium Commercial</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label class="form-label text-uppercase fw-bold mb-2"
+                    style="font-size: 0.65rem; letter-spacing: 0.15em; color: #888;">Valuation
+                    Tier</label>
+                <select
+                    class="form-select rounded-0 bg-transparent text-dark border-secondary py-2 custom-select-light">
+                    <option selected value="all">Any Valuation</option>
+                    <option value="tier1">$2M - $5M</option>
+                    <option value="tier2">$5M - $10M</option>
+                    <option value="tier3">$10M - $25M</option>
+                    <option value="tier4">$25M+ (Trophy)</option>
+                </select>
+            </div>
+            <div class="col-md-3 pt-3 pt-md-0">
+                <button class="btn w-100 rounded-0 py-2 fw-bold text-uppercase text-white border-0"
+                    style="background-color: #111; font-size: 0.8rem; letter-spacing: 0.05em;">
+                    Update View
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- The Portfolio Grid -->
+<section id="portfolio" class="py-5" style="background-color: #f8f9fa;">
+    <div class="container py-5 border-top border-light">
+        <div class="d-flex justify-content-between align-items-end mb-5 gsap-prop-heading">
+            <div>
+                <span class="text-uppercase fw-bold d-block mb-2"
+                    style="font-size: 0.75rem; letter-spacing: 0.15em; color: #888;">Public
+                    Portfolio</span>
+                <h2 class="display-6 fw-bold text-dark mb-0" style="letter-spacing: -0.02em;">
+                    Available Acquisitions
+                </h2>
+            </div>
+            <div class="d-none d-md-block text-end">
+                <p class="text-muted mb-0 fw-medium" style="font-size: 0.9rem;">Displaying 6 of 84 properties</p>
+            </div>
+        </div>
+
+        <div class="row g-5">
+            <!-- Property 1 -->
+            <div class="col-md-6 col-lg-4 gsap-property-card">
+                <div class="card bg-white shadow-sm border-0 h-100 rounded-0">
+                    <div class="position-relative overflow-hidden prop-img-container">
+                        <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80"
+                            alt="Beverly Hills Estate" class="w-100 object-fit-cover prop-img" style="height: 380px;">
+                        <div class="position-absolute top-0 start-0 m-3 px-3 py-1 text-uppercase fw-bold bg-white text-dark shadow-sm"
+                            style="font-size: 0.65rem; letter-spacing: 0.1em;">
+                            TROPHY ASSET
+                        </div>
+                        <div
+                            class="prop-overlay position-absolute bottom-0 start-0 w-100 p-4 d-flex align-items-center justify-content-center">
+                            <button class="btn btn-light rounded-0 text-uppercase fw-bold"
+                                style="font-size: 0.75rem; letter-spacing: 0.1em;">View Dossier</button>
+                        </div>
+                    </div>
+                    <div class="card-body p-4 pb-0">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h4 class="fw-bold text-dark mb-0" style="letter-spacing: -0.01em;">The Crown Estate</h4>
+                            <h5 class="fw-bold mb-0 text-dark">$32.5M</h5>
+                        </div>
+                        <p class="text-muted mb-3" style="font-size: 0.85rem;"><i
+                                class="bi bi-geo-alt me-1 text-dark"></i>Beverly Hills, California</p>
+                        <div class="d-flex justify-content-between border-top border-light pt-3 text-muted">
+                            <div style="font-size: 0.8rem;"><strong class="text-dark">14,500</strong> sqft</div>
+                            <div style="font-size: 0.8rem;"><strong class="text-dark">8</strong> Beds</div>
+                            <div style="font-size: 0.8rem;"><strong class="text-dark">12</strong> Baths</div>
+                            <div style="font-size: 0.8rem;"><strong class="text-dark">3.2</strong> Acres</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Property 2 -->
+            <div class="col-md-6 col-lg-4 gsap-property-card">
+                <div class="card bg-white shadow-sm border-0 h-100 rounded-0">
+                    <div class="position-relative overflow-hidden prop-img-container">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80"
+                            alt="Dubai Penthouse" class="w-100 object-fit-cover prop-img" style="height: 380px;">
+                        <div
+                            class="prop-overlay position-absolute bottom-0 start-0 w-100 p-4 d-flex align-items-center justify-content-center">
+                            <button class="btn btn-light rounded-0 text-uppercase fw-bold"
+                                style="font-size: 0.75rem; letter-spacing: 0.1em;">View Dossier</button>
+                        </div>
+                    </div>
+                    <div class="card-body p-4 pb-0">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h4 class="fw-bold text-dark mb-0" style="letter-spacing: -0.01em;">Palm Jumeirah Apex</h4>
+                            <h5 class="fw-bold mb-0 text-dark">$18.2M</h5>
+                        </div>
+                        <p class="text-muted mb-3" style="font-size: 0.85rem;"><i
+                                class="bi bi-geo-alt me-1 text-dark"></i>Dubai, UAE</p>
+                        <div class="d-flex justify-content-between border-top border-light pt-3 text-muted">
+                            <div style="font-size: 0.8rem;"><strong class="text-dark">8,200</strong> sqft</div>
+                            <div style="font-size: 0.8rem;"><strong class="text-dark">5</strong> Beds</div>
+                            <div style="font-size: 0.8rem;"><strong class="text-dark">6</strong> Baths</div>
+                            <div style="font-size: 0.8rem;"><strong class="text-dark">Penthouse</strong></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Property 3 -->
+            <div class="col-md-6 col-lg-4 gsap-property-card">
+                <div class="card bg-white shadow-sm border-0 h-100 rounded-0">
+                    <div class="position-relative overflow-hidden prop-img-container">
+                        <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=1600&q=90"
+                            alt="Lake Como Villa" class="w-100 object-fit-cover prop-img" style="height: 380px;">
+                        <div class="position-absolute top-0 start-0 m-3 px-3 py-1 text-uppercase fw-bold bg-dark text-white shadow-sm"
+                            style="font-size: 0.65rem; letter-spacing: 0.1em;">
+                            NEW EXCLUSIVE
+                        </div>
+                        <div
+                            class="prop-overlay position-absolute bottom-0 start-0 w-100 p-4 d-flex align-items-center justify-content-center">
+                            <button class="btn btn-light rounded-0 text-uppercase fw-bold"
+                                style="font-size: 0.75rem; letter-spacing: 0.1em;">View Dossier</button>
+                        </div>
+                    </div>
+                    <div class="card-body p-4 pb-0">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h4 class="fw-bold text-dark mb-0" style="letter-spacing: -0.01em;">Villa Bellagio</h4>
+                            <h5 class="fw-bold mb-0 text-dark">$12.5M</h5>
+                        </div>
+                        <p class="text-muted mb-3" style="font-size: 0.85rem;"><i
+                                class="bi bi-geo-alt me-1 text-dark"></i>Lake
+                            Como, Italy</p>
+                        <div class="d-flex justify-content-between border-top border-light pt-3 text-muted">
+                            <div style="font-size: 0.8rem;"><strong class="text-dark">6,500</strong> sqft</div>
+                            <div style="font-size: 0.8rem;"><strong class="text-dark">7</strong> Beds</div>
+                            <div style="font-size: 0.8rem;"><strong class="text-dark">8</strong> Baths</div>
+                            <div style="font-size: 0.8rem;"><strong class="text-dark">Waterfront</strong></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Property 4 -->
+            <div class="col-md-6 col-lg-4 gsap-property-card">
+                <div class="card bg-white shadow-sm border-0 h-100 rounded-0">
+                    <div class="position-relative overflow-hidden prop-img-container">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80"
+                            alt="Swiss Chalet" class="w-100 object-fit-cover prop-img" style="height: 380px;">
+                        <div
+                            class="prop-overlay position-absolute bottom-0 start-0 w-100 p-4 d-flex align-items-center justify-content-center">
+                            <button class="btn btn-light rounded-0 text-uppercase fw-bold"
+                                style="font-size: 0.75rem; letter-spacing: 0.1em;">View Dossier</button>
+                        </div>
+                    </div>
+                    <div class="card-body p-4 pb-0">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h4 class="fw-bold text-dark mb-0" style="letter-spacing: -0.01em;">Alpine Summit</h4>
+                            <h5 class="fw-bold mb-0 text-dark">$9.8M</h5>
+                        </div>
+                        <p class="text-muted mb-3" style="font-size: 0.85rem;"><i
+                                class="bi bi-geo-alt me-1 text-dark"></i>Gstaad, Switzerland</p>
+                        <div class="d-flex justify-content-between border-top border-light pt-3 text-muted">
+                            <div style="font-size: 0.8rem;"><strong class="text-dark">5,400</strong> sqft</div>
+                            <div style="font-size: 0.8rem;"><strong class="text-dark">6</strong> Beds</div>
+                            <div style="font-size: 0.8rem;"><strong class="text-dark">7</strong> Baths</div>
+                            <div style="font-size: 0.8rem;"><strong class="text-dark">Ski-in/out</strong></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Property 5 -->
+            <div class="col-md-6 col-lg-4 gsap-property-card">
+                <div class="card bg-white shadow-sm border-0 h-100 rounded-0">
+                    <div class="position-relative overflow-hidden prop-img-container">
+                        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80"
+                            alt="Manhattan Penthouse" class="w-100 object-fit-cover prop-img" style="height: 380px;">
+                        <div
+                            class="prop-overlay position-absolute bottom-0 start-0 w-100 p-4 d-flex align-items-center justify-content-center">
+                            <button class="btn btn-light rounded-0 text-uppercase fw-bold"
+                                style="font-size: 0.75rem; letter-spacing: 0.1em;">View Dossier</button>
+                        </div>
+                    </div>
+                    <div class="card-body p-4 pb-0">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h4 class="fw-bold text-dark mb-0" style="letter-spacing: -0.01em;">57th St Pinnacle</h4>
+                            <h5 class="fw-bold mb-0 text-dark">$24.0M</h5>
+                        </div>
+                        <p class="text-muted mb-3" style="font-size: 0.85rem;"><i
+                                class="bi bi-geo-alt me-1 text-dark"></i>Manhattan, New York</p>
+                        <div class="d-flex justify-content-between border-top border-light pt-3 text-muted">
+                            <div style="font-size: 0.8rem;"><strong class="text-dark">4,800</strong> sqft</div>
+                            <div style="font-size: 0.8rem;"><strong class="text-dark">4</strong> Beds</div>
+                            <div style="font-size: 0.8rem;"><strong class="text-dark">4.5</strong> Baths</div>
+                            <div style="font-size: 0.8rem;"><strong class="text-dark">Floor 72</strong></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Property 6 -->
+            <div class="col-md-6 col-lg-4 gsap-property-card">
+                <div class="card bg-white shadow-sm border border-secondary border-opacity-25 h-100 rounded-0">
+                    <div class="position-relative overflow-hidden prop-img-container">
+                        <!-- Blurred image for restricted access effect -->
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80"
+                            alt="Restricted Asset" class="w-100 object-fit-cover prop-img"
+                            style="height: 380px; filter: blur(12px) grayscale(20%); opacity: 0.8;">
+                        <div class="position-absolute top-0 start-0 m-3 px-3 py-1 text-uppercase fw-bold bg-dark text-white shadow-sm"
+                            style="font-size: 0.65rem; letter-spacing: 0.1em;">
+                            OFF-MARKET
+                        </div>
+                        <div class="position-absolute top-50 start-50 translate-middle text-center w-100">
+                            <i class="bi bi-lock-fill text-dark mb-2 fs-3"></i>
+                            <h6 class="text-dark fw-bold mb-1" style="letter-spacing: 0.1em;">RESTRICTED ACCESS</h6>
+                            <p class="text-dark fw-medium small mb-0 px-4">Verification required to view this asset</p>
+                        </div>
+                        <div
+                            class="prop-overlay position-absolute bottom-0 start-0 w-100 p-4 d-flex align-items-center justify-content-center">
+                            <button class="btn border-0 shadow"
+                                style="background-color: #c9a84c; color: #fff; border-radius: 0; font-size: 0.75rem; letter-spacing: 0.1em; font-weight: bold;">Unlock
+                                Access</button>
+                        </div>
+                    </div>
+                    <div class="card-body p-4 pb-0">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <h4 class="fw-bold text-dark mb-0" style="letter-spacing: -0.01em; filter: blur(3px);">
+                                Confidential Estate</h4>
+                            <h5 class="fw-bold mb-0 text-dark">POA</h5>
+                        </div>
+                        <p class="text-muted mb-3" style="font-size: 0.85rem;"><i
+                                class="bi bi-geo-alt me-1 text-dark"></i>Côte
+                            d'Azur, France</p>
+                        <div class="d-flex justify-content-between border-top border-light pt-3 text-muted"
+                            style="filter: blur(3px);">
+                            <div style="font-size: 0.8rem;"><strong class="text-dark">--</strong> sqft</div>
+                            <div style="font-size: 0.8rem;"><strong class="text-dark">-</strong> Beds</div>
+                            <div style="font-size: 0.8rem;"><strong class="text-dark">-</strong> Baths</div>
+                            <div style="font-size: 0.8rem;"><strong class="text-dark">Helipad</strong></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-5 pt-4 gsap-load-more">
+            <button class="btn btn-outline-dark rounded-0 px-5 py-3 text-uppercase fw-bold"
+                style="font-size: 0.8rem; letter-spacing: 0.1em; border-color: rgba(0,0,0,0.2);">
+                Load More Assets
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Off-Market CTA -->
+<section class="py-5 position-relative overflow-hidden border-top border-light shadow-sm"
+    style="background-color: #ffffff;">
+    <div class="container py-5 my-md-4 position-relative z-2">
+        <div class="row justify-content-center text-center gsap-props-cta">
+            <div class="col-lg-8">
+                <i class="bi bi-key mb-4 d-block" style="font-size: 3rem; color: #111;"></i>
+                <h2 class="display-5 fw-bold text-dark mb-4" style="letter-spacing: -0.02em;">
+                    Unlock the Private Collection.
+                </h2>
+                <p class="text-muted mb-5 mx-auto fs-5 fw-medium" style="max-width: 600px; line-height: 1.6;">
+                    70% of our ultra-luxury transactions occur entirely off-market. Complete our verification protocol
+                    to access restricted estates globally.
+                </p>
+                <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center align-items-center">
+                    <button class="btn rounded-0 px-5 py-3 text-uppercase fw-bold w-100 w-sm-auto text-white border-0"
+                        style="background-color: #111; font-size: 0.85rem; letter-spacing: 0.05em; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);">
+                        Apply for Access
+                    </button>
+                    <a routerLink="/contact"
+                        class="text-dark text-decoration-none border-bottom border-dark pb-1 ms-sm-3 fw-bold"
+                        style="transition: color 0.3s ease;">
+                        Speak with a broker
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<app-footer></app-footer>

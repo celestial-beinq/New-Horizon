@@ -1,0 +1,75 @@
+:host {
+  display: block;
+  background-color: #f8f9fa;
+}
+
+/* ───── Hero Effects ───── */
+.gsap-prop-bg img {
+  transition: transform 10s ease-out;
+}
+.gsap-prop-bg:hover img {
+  transform: scale(1.08) !important; 
+}
+
+/* ───── Custom Select Dropdowns ───── */
+.custom-select-light {
+  background-color: transparent;
+  color: #111;
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,0.1) !important;
+  font-family: inherit;
+  font-size: 0.95rem;
+  padding-left: 0;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+}
+.custom-select-light:focus {
+  box-shadow: none;
+  border-bottom-color: #c9a84c !important;
+  background-color: transparent;
+  color: #111;
+}
+.custom-select-light option {
+  background-color: #fff;
+  color: #111;
+}
+
+/* ───── Property Cards ───── */
+.prop-img-container {
+  aspect-ratio: 4/3;
+  width: 100%;
+}
+.prop-img {
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), filter 0.5s ease;
+}
+.gsap-property-card .card {
+  transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.4s ease;
+  cursor: pointer;
+}
+.gsap-property-card:hover .card {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.06) !important;
+}
+.gsap-property-card:hover .prop-img {
+  transform: scale(1.06);
+  filter: brightness(1.05);
+}
+/* Exception for restricted card where hover behavior should be different */
+.gsap-property-card:hover .prop-img[alt="Restricted Asset"] {
+  transform: scale(1.02);
+  filter: blur(12px) grayscale(20%) brightness(0.9) !important;
+}
+
+.prop-overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.gsap-property-card:hover .prop-overlay {
+  opacity: 1;
+}
+
+/* Hover effects for buttons */
+.btn:hover {
+  opacity: 0.9;
+}
