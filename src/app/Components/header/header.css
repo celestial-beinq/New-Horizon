@@ -1,0 +1,4 @@
+/* Fixed navbar body offset */
+body {
+    padding-top: 76px !important;
+}

@@ -1,5 +1,6 @@
 <!--Hero Section-->
-<section class="py-xl-8 py-6" style="background-image: url('assets/img/hero-bg.png'); background-size: cover; background-position: center;">
+<section class="py-xl-8 py-6"
+    style="background-image: url('assets/img/hero-bg.png'); background-size: cover; background-position: center;">
     <div class="container py-xl-6">
         <div class="row gy-6 gy-xl-0">
             <div class="col-lg-6 col-xxl-6 col-12">
@@ -7,49 +8,59 @@
                     <div class="d-flex flex-column gap-3 gsap-hero-title">
                         <h1 class="mb-0 display-2 fw-bolder text-black">Find A Place You Will Call Home</h1>
                     </div>
-                    <div class="d-flex gap-2 justify-content-center justify-content-lg-start flex-nowrap gsap-hero-buttons">
+                    <div
+                        class="d-flex gap-2 justify-content-center justify-content-lg-start flex-nowrap gsap-hero-buttons">
                         <!-- Button 1 -->
-                        <a href="" routerLink="/about"
-                            class="btn btn-success bg-black rounded-0 d-inline-flex align-items-center gap-2 py-2 px-3 text-nowrap">
+                        <a href="" routerLink="/contact"
+                            class="btn btn-success bg-black rounded-0 d-inline-flex align-items-center gap-2 py-2 px-5 text-nowrap">
                             <span>Book A Call</span>
                             <i class="bi bi-arrow-up-right-circle-fill fs-3"></i>
                         </a>
-                    
+
                         <!-- Button 2 -->
-                        <a href="" routerLink="/about"
-                            class="btn btn-light bg-light rounded-0 d-inline-flex align-items-center gap-2 py-2 px-3 text-nowrap">
+                        <a href="" routerLink="/properties"
+                            class="btn btn-light bg-light rounded-0 d-inline-flex align-items-center gap-2 py-2 px-5 text-nowrap">
                             <span>View properties</span>
                         </a>
-                    
-                    </div>
-                    <div class="row gx-3 justify-content-center justify-content-lg-start rounded-0 border border-light gsap-hero-stats" style=" background: transparent; backdrop-filter: blur(2px);">
-                        <div class="col-4">
-                            <div class="text-center py-4">
-                                <div class="fs-2 fw-bold text-white">500+</div>
-                                <div class="text-white">Properties Sold</div>
-                            </div>
-                        </div>
 
-                        <div class="col-4">
-                            <div class="text-center py-4">
-                                <div class="fs-2 fw-bold text-white">5 Years</div>
-                                <div class="text-white">Trusted Experience</div>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="text-center py-4">
-                                <div class="fs-2 fw-bold text-white">24/7</div>
-                                <div class="text-white">Client Support</div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 col-xxl-6 col-12 gsap-hero-desc">
-                <p class="mb-0 text-black fs-6">
-                    We provide premium real estate services for homes, apartments, offices, commercial properties, and investment
-                    developments with dependable property solutions designed to match modern lifestyles and Nigeria’s growing real estate
-                    market.</p>
+                <!-- Desktop -->
+                <p class="mb-0 fs-5 text-black d-none d-lg-block">
+                    We provide premium real estate services for homes, apartments, offices,
+                    commercial properties, and investment developments with dependable property
+                    solutions designed to match modern lifestyles and Nigeria’s growing real estate market.
+                </p>
+
+                <!-- Mobile & Tablet -->
+                <p class="mb-0 fs-5 text-white d-block d-lg-none">
+                    We provide premium real estate services for homes, apartments, offices,
+                    commercial properties, and investment developments with dependable property
+                    solutions designed to match modern lifestyles and Nigeria’s growing real estate market.
+                </p>
+            </div>
+        </div>
+        <div class="row gx-3 justify-content-center justify-content-lg-start mt-5 rounded-0 border border-light gsap-hero-stats"
+            style=" background: transparent; backdrop-filter: blur(2px);">
+            <div class="col-4">
+                <div class="text-center py-4">
+                    <div class="fs-2 fw-bold text-white">500+</div>
+                    <div class="text-white">Properties Sold</div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="text-center py-4">
+                    <div class="fs-2 fw-bold text-white">5 Years</div>
+                    <div class="text-white">Trusted Experience</div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="text-center py-4">
+                    <div class="fs-2 fw-bold text-white">24/7</div>
+                    <div class="text-white">Client Support</div>
+                </div>
             </div>
         </div>
     </div>
