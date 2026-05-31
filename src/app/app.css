@@ -1,0 +1,11 @@
+.wa-hover-effect:hover {
+    transform: scale(1.1);
+    color: white !important;
+}
+
+/* Ensure mobile body doesn't get covered by the sticky button */
+@media (max-width: 767.98px) {
+    body {
+        padding-bottom: 70px;
+    }
+}
